@@ -1,5 +1,5 @@
 #pragma once
-
+#include"AddCard.h"
 namespace test {
 
 	using namespace System;
@@ -226,6 +226,9 @@ private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	AddCard addCard;
+	this->Hide();
+	addCard.ShowDialog();
 }
 };
 }

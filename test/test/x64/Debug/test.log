@@ -1,6 +1,7 @@
-﻿  Home.cpp
+﻿  AddCard.cpp
+  Home.cpp
   Login.cpp
-C:\Users\Aly\source\repos\test\Login.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Login.cpp(7,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
   Generating Code...
-  Home.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  test.vcxproj -> C:\Users\Aly\source\repos\test\x64\Debug\test.exe
+  AddCard.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  test.vcxproj -> C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\x64\Debug\test.exe

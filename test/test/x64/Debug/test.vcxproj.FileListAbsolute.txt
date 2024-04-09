@@ -3,3 +3,9 @@ C:\Users\Aly\source\repos\test\test\x64\Debug\test.Login.resources
 C:\Users\Aly\source\repos\test\test\x64\Debug\test.Register.resources
 C:\Users\Aly\source\repos\test\test\x64\Debug\test.vcxproj.GenerateResource.cache
 C:\Users\Aly\source\repos\test\test\x64\Debug\test.Home.resources
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.vcxproj.AssemblyReference.cache
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.AddCard.resources
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.Home.resources
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.Login.resources
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.Register.resources
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.vcxproj.GenerateResource.cache
