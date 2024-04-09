@@ -220,6 +220,7 @@ namespace test {
 private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
+
 	Application::Exit();
 }
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
