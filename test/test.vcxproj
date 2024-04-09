@@ -124,10 +124,12 @@
   <ItemGroup>
     <ClCompile Include="AddCard.cpp" />
     <ClCompile Include="BuyWithcard.cpp" />
+    <ClCompile Include="BuyWithoutcard.cpp" />
     <ClCompile Include="Home.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="PaymentLine.cpp" />
     <ClCompile Include="Register.cpp" />
+    <ClCompile Include="ViewCards.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddCard.h">
@@ -137,6 +139,11 @@
     <ClInclude Include="BuyWithcard.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="BuyWithoutcard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="cardsInformation.h" />
+    <ClInclude Include="DataControler.h" />
     <ClInclude Include="Home.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -146,7 +153,12 @@
     <ClInclude Include="PaymentLine.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="PriorityQueue.h" />
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="Register.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ViewCards.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -156,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuyWithcard.resx">
       <DependentUpon>BuyWithcard.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyWithoutcard.resx">
+      <DependentUpon>BuyWithoutcard.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.h</DependentUpon>
@@ -168,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCards.resx">
+      <DependentUpon>ViewCards.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

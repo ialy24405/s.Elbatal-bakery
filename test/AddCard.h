@@ -1,5 +1,6 @@
 #pragma once
-
+#include"DataControler.h"
+#include"ViewCards.h"
 namespace test {
 
 	using namespace System;
@@ -47,6 +48,7 @@ namespace test {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label4;
 
 	private:
 		/// <summary>
@@ -74,6 +76,7 @@ namespace test {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -231,13 +234,29 @@ namespace test {
 			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(349, 614);
+			this->label6->Location = System::Drawing::Point(248, 614);
 			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(69, 36);
 			this->label6->TabIndex = 42;
 			this->label6->Text = L"Exit";
 			this->label6->Click += gcnew System::EventHandler(this, &AddCard::label6_Click);
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label4->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(357, 614);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(172, 36);
+			this->label4->TabIndex = 43;
+			this->label4->Text = L"View cards";
+			this->label4->Click += gcnew System::EventHandler(this, &AddCard::label4_Click);
 			// 
 			// AddCard
 			// 
@@ -248,6 +267,7 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(775, 720);
+			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
@@ -274,6 +294,28 @@ namespace test {
 	private: System::Void AddCard_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+		String ^ name = textUsername->Text;
+		String ^ numStr = textBox1->Text;
+		int num = System::Convert::ToInt32(numStr);
+		if (numStr == "" || name == "")
+		{
+			MessageBox::Show("Please fill all fields");
+			return;
+		}
+		else {
+			if (Int32::TryParse(numStr, num)) {
+
+				DataManager::addnewCard(name, num);
+				MessageBox::Show("Card added successfully");
+				textUsername->Text = "";
+				textBox1->Text = "";
+
+			}
+			else {
+				MessageBox::Show("Please enter a valid number");
+			}
+		}
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -283,6 +325,12 @@ private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e)
 }
 private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
+}
+
+private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
+	ViewCards f;
+	this->Hide();
+	f.ShowDialog();
 }
 };
 }

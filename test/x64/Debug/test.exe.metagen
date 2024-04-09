@@ -1,9 +1,11 @@
   test.AddCard.resources - Embedded, ContainedInManifestFile, 
   test.BuyWithcard.resources - Embedded, ContainedInManifestFile, 
+  test.BuyWithoutcard.resources - Embedded, ContainedInManifestFile, 
   test.Home.resources - Embedded, ContainedInManifestFile, 
   test.Login.resources - Embedded, ContainedInManifestFile, 
   test.PaymentLine.resources - Embedded, ContainedInManifestFile, 
   test.Register.resources - Embedded, ContainedInManifestFile, 
+  test.ViewCards.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly test, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
 	hash=SHA1, flags=PublicKey
@@ -19,10 +21,26 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 	hash=None, flags=None
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
+Class DataManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetCardsVector(): PrivateScope, Public, Static, HideBySig
+    getID(Int32): PrivateScope, Public, Static, HideBySig
+    getSize(): PrivateScope, Public, Static, HideBySig
+    addnewCard(String, Int32): PrivateScope, Public, Static, HideBySig
+    AddCard(CardsInformation): PrivateScope, Public, Static, HideBySig
+Class test.ViewCards: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    display_queue(): PrivateScope, Public, HideBySig
 Class test.AddCard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class test.BuyWithcard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class test.BuyWithoutcard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class test.PaymentLine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

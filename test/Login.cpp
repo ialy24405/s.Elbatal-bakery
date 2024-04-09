@@ -1,6 +1,5 @@
 #include "Login.h"
 using namespace test;
-using namespace std;
 using namespace System;
 using namespace System::Windows::Forms;
 [STAThreadAttribute]

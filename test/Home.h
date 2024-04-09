@@ -2,7 +2,7 @@
 #include"AddCard.h"
 #include"PaymentLine.h"
 #include"BuyWithcard.h"
-
+#include"BuyWithoutcard.h"
 namespace test {
 
 	using namespace System;
@@ -231,6 +231,9 @@ private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e)
 	Application::Exit();
 }
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
+	BuyWithoutcard buyWithoutCard;
+	this->Hide();
+	buyWithoutCard.ShowDialog();
 }
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	AddCard addCard;

@@ -11,3 +11,5 @@ C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.Register
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.vcxproj.GenerateResource.cache
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.PaymentLine.resources
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.BuyWithcard.resources
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.BuyWithoutcard.resources
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\test\x64\Debug\test.ViewCards.resources
