@@ -1,5 +1,6 @@
 #pragma once
 #include"AddCard.h"
+#include"PaymentLine.h"
 namespace test {
 
 	using namespace System;
@@ -216,6 +217,9 @@ namespace test {
 		}
 #pragma endregion
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+		PaymentLine paymentLine;
+		this->Hide();
+		paymentLine.ShowDialog();
 	}
 private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
 }

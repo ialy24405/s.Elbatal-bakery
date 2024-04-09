@@ -1,6 +1,7 @@
   test.AddCard.resources - Embedded, ContainedInManifestFile, 
   test.Home.resources - Embedded, ContainedInManifestFile, 
   test.Login.resources - Embedded, ContainedInManifestFile, 
+  test.PaymentLine.resources - Embedded, ContainedInManifestFile, 
   test.Register.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly test, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
@@ -18,6 +19,9 @@ Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=
 Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
 	hash=None, flags=None
 Class test.AddCard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class test.PaymentLine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class test.Home: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
