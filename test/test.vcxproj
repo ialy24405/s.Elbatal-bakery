@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddCard.cpp" />
+    <ClCompile Include="BuyWithcard.cpp" />
     <ClCompile Include="Home.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="PaymentLine.cpp" />
@@ -133,6 +134,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="BuyWithcard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Home.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -149,6 +153,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddCard.resx">
       <DependentUpon>AddCard.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyWithcard.resx">
+      <DependentUpon>BuyWithcard.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.h</DependentUpon>

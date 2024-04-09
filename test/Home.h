@@ -1,6 +1,8 @@
 #pragma once
 #include"AddCard.h"
 #include"PaymentLine.h"
+#include"BuyWithcard.h"
+
 namespace test {
 
 	using namespace System;
@@ -127,6 +129,7 @@ namespace test {
 			this->label3->TabIndex = 34;
 			this->label3->Text = L"buy bread with card";
 			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label3->Click += gcnew System::EventHandler(this, &Home::label3_Click);
 			// 
 			// label4
 			// 
@@ -233,6 +236,11 @@ private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e)
 	AddCard addCard;
 	this->Hide();
 	addCard.ShowDialog();
+}
+private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+	BuyWithcard buyWithCard;
+	this->Hide();
+	buyWithCard.ShowDialog();
 }
 };
 }
