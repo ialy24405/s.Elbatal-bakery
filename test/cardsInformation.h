@@ -15,7 +15,9 @@ public:
         this->monthlyBread = familySize * 150;
         this->id = ++cardsID;
     }
-
+    static int getCardsID() {
+		return cardsID;
+	}
     property System::String^ Name {
         System::String^ get() {
             return name;

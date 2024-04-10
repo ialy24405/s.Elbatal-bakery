@@ -1,5 +1,5 @@
 #pragma once
-#include"Admin.h"
+#include "DataControler.h"
 #include"Register.h"
 #include"Home.h"
 namespace test {
@@ -26,9 +26,7 @@ namespace test {
 			//
 			//TODO: Add the constructor code here
 			//
-			adminsList = gcnew List<Admin^>();
-			Admin^ admin1 = gcnew Admin("admin", "123");
-			adminsList->Add(admin1);
+			adminsList = DataManager::GetAdminsList();
 		}
 
 	protected:
@@ -113,6 +111,7 @@ namespace test {
 			this->textUsername->Name = L"textUsername";
 			this->textUsername->Size = System::Drawing::Size(320, 34);
 			this->textUsername->TabIndex = 18;
+			this->textUsername->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Login::textUsername_KeyDown);
 			// 
 			// textPassword
 			// 
@@ -127,6 +126,8 @@ namespace test {
 			this->textPassword->PasswordChar = '*';
 			this->textPassword->Size = System::Drawing::Size(320, 38);
 			this->textPassword->TabIndex = 24;
+			this->textPassword->TextChanged += gcnew System::EventHandler(this, &Login::textPassword_TextChanged);
+			this->textPassword->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Login::textPassword_KeyDown);
 			// 
 			// pictureBox2
 			// 
@@ -300,10 +301,12 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		{
 			MessageBox::Show("Login Successfully", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
 			// homePage();
+			textUsername->Clear();
+			textPassword->Clear();
 			Home home;
 			this->Hide();
 			home.ShowDialog();
-			return;
+			this->Show();
 		}
 	}
 	// Show a message box indicating invalid credentials
@@ -322,11 +325,27 @@ private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e)
 	Register registerForm;
 	this->Hide();
 	registerForm.ShowDialog();
+	this->Show();
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	textUsername->Clear();
 	textPassword->Clear();
 	textUsername->Focus();
+}
+private: System::Void textUsername_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+		if (e->KeyCode == Keys::Enter)
+	{
+		textPassword->Focus();
+	}
+}
+private: System::Void textPassword_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textPassword_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+		if (e->KeyCode == Keys::Enter)
+	{
+		button1->PerformClick();
+		textUsername->Focus();
+	}
 }
 };
 }

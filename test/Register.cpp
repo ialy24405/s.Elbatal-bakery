@@ -1,5 +1,4 @@
 #include "Register.h"
-using namespace std;
 using namespace System;
 using namespace System::Windows::Forms;
 using namespace test;

@@ -45,6 +45,7 @@ namespace test {
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
 	protected:
 
 	private:
@@ -69,6 +70,7 @@ namespace test {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// panel3
@@ -171,7 +173,7 @@ namespace test {
 			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(319, 620);
+			this->label6->Location = System::Drawing::Point(235, 620);
 			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(69, 36);
@@ -194,6 +196,22 @@ namespace test {
 			this->label7->Text = L"Total Bakery revenue";
 			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label8->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label8->Location = System::Drawing::Point(362, 620);
+			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(113, 36);
+			this->label8->TabIndex = 43;
+			this->label8->Text = L"log out";
+			this->label8->Click += gcnew System::EventHandler(this, &Home::label8_Click);
+			// 
 			// Home
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -203,6 +221,7 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(775, 720);
+			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
@@ -223,6 +242,7 @@ namespace test {
 		PaymentLine paymentLine;
 		this->Hide();
 		paymentLine.ShowDialog();
+		this->Show();
 	}
 private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
 }
@@ -234,16 +254,22 @@ private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e)
 	BuyWithoutcard buyWithoutCard;
 	this->Hide();
 	buyWithoutCard.ShowDialog();
+	this->Show();
 }
 private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	AddCard addCard;
 	this->Hide();
 	addCard.ShowDialog();
+	this->Show();
 }
 private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
 	BuyWithcard buyWithCard;
 	this->Hide();
 	buyWithCard.ShowDialog();
+	this->Show();
+}
+private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
 }
 };
 }

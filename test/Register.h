@@ -1,6 +1,7 @@
 #pragma once
-#include"Admin.h"
+//#include"Admin.h"
 //#include"Login.h"
+#include "DataControler.h"
 namespace test {
 
 	using namespace System;
@@ -55,6 +56,7 @@ namespace test {
 	private: System::Windows::Forms::Panel^ panel2;
 	private: System::Windows::Forms::Panel^ panel3;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Label^ label6;
 
 	private:
 		/// <summary>
@@ -81,6 +83,7 @@ namespace test {
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label6 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -93,7 +96,7 @@ namespace test {
 			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(241, 556);
+			this->label3->Location = System::Drawing::Point(207, 556);
 			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(69, 36);
@@ -118,6 +121,7 @@ namespace test {
 			this->button1->TabIndex = 38;
 			this->button1->Text = L"Sign Up";
 			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &Register::button1_Click);
 			// 
 			// textUsername
 			// 
@@ -129,10 +133,10 @@ namespace test {
 			this->textUsername->HideSelection = false;
 			this->textUsername->Location = System::Drawing::Point(247, 359);
 			this->textUsername->Margin = System::Windows::Forms::Padding(4);
-			this->textUsername->Multiline = true;
 			this->textUsername->Name = L"textUsername";
-			this->textUsername->Size = System::Drawing::Size(320, 39);
+			this->textUsername->Size = System::Drawing::Size(320, 34);
 			this->textUsername->TabIndex = 31;
+			this->textUsername->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Register::textUsername_KeyDown);
 			// 
 			// textPassword
 			// 
@@ -143,11 +147,11 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->textPassword->Location = System::Drawing::Point(247, 413);
 			this->textPassword->Margin = System::Windows::Forms::Padding(4);
-			this->textPassword->Multiline = true;
 			this->textPassword->Name = L"textPassword";
 			this->textPassword->PasswordChar = '*';
-			this->textPassword->Size = System::Drawing::Size(320, 39);
+			this->textPassword->Size = System::Drawing::Size(320, 38);
 			this->textPassword->TabIndex = 37;
+			this->textPassword->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Register::textPassword_KeyDown);
 			// 
 			// pictureBox2
 			// 
@@ -228,13 +232,29 @@ namespace test {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::Color::Black;
-			this->button2->Location = System::Drawing::Point(359, 555);
+			this->button2->Location = System::Drawing::Point(418, 555);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(149, 45);
 			this->button2->TabIndex = 42;
 			this->button2->Text = L"Clear fields";
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &Register::button2_Click);
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(296, 556);
+			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(104, 36);
+			this->label6->TabIndex = 43;
+			this->label6->Text = L"Log in";
+			this->label6->Click += gcnew System::EventHandler(this, &Register::label6_Click);
 			// 
 			// Register
 			// 
@@ -245,6 +265,7 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(775, 720);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button1);
@@ -268,7 +289,6 @@ namespace test {
 		}
 #pragma endregion
 	private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->Close();
 		Application::Exit();
 	}
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -282,6 +302,39 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	textUsername->Focus();
 }
 private: System::Void Register_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textUsername_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+	if (e->KeyCode == Keys::Enter) {
+		textPassword->Focus();
+	}
+}
+private: System::Void textPassword_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+	if (e->KeyCode == Keys::Enter) {
+		button1->PerformClick();
+	}
+}
+private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ username = textUsername->Text;
+	String^ password = textPassword->Text;
+	if (username == "" || password == "") {
+		MessageBox::Show("Please fill in all fields", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+	else {
+
+		if (!DataManager::CheckAdmin(username, password)) {
+			DataManager::AddAdmin(username, password);
+			MessageBox::Show("Account created successfully", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+			textUsername->Clear();
+			textPassword->Clear();
+			textUsername->Focus();
+		}
+		else {
+			MessageBox::Show("Username already exists", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+	}
 }
 };
 }

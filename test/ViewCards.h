@@ -39,9 +39,9 @@ namespace test {
 				{
 					// Create a button for each cell
 					Label^ button = gcnew Label();
-					button->Text = cards[i]->getID()+" "+cards[i]->getName();
+					button->Text = cards[i]->getID()+" ) "+cards[i]->getName()+"\nfamily size :"+cards[i]->getFamilySize()+"\nmonthly bread :"+cards[i]->getMonthlyBread();
 					button->Dock = DockStyle::Fill; // Dock buttons to fill the cell
-					button->TextAlign = ContentAlignment::MiddleCenter; // Center the text
+					button->TextAlign = ContentAlignment::MiddleLeft; // Center the text
 					button->AutoSize = true;
 					// Add button to the table layout
 					tableLayoutPanel1->Controls->Add(button, col, row);
@@ -66,6 +66,9 @@ namespace test {
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 	private: System::Windows::Forms::Panel^ panel3;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label2;
+
 	protected:
 
 	private:
@@ -85,6 +88,8 @@ namespace test {
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// tableLayoutPanel1
@@ -129,6 +134,38 @@ namespace test {
 			this->label1->TabIndex = 33;
 			this->label1->Text = L"Available cards :";
 			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(373, 308);
+			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(69, 36);
+			this->label6->TabIndex = 42;
+			this->label6->Text = L"Exit";
+			this->label6->Click += gcnew System::EventHandler(this, &ViewCards::label6_Click);
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label2->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->Location = System::Drawing::Point(483, 308);
+			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(85, 36);
+			this->label2->TabIndex = 43;
+			this->label2->Text = L"Back";
+			this->label2->Click += gcnew System::EventHandler(this, &ViewCards::label2_Click_1);
+			// 
 			// ViewCards
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -138,6 +175,8 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(782, 753);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->tableLayoutPanel1);
@@ -152,5 +191,13 @@ namespace test {
 #pragma endregion
 	private: System::Void ViewCards_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
+}
+private: System::Void label2_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
+};
 }
