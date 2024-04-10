@@ -39,15 +39,15 @@ namespace test {
 				{
 					// Create a button for each cell
 					Label^ button = gcnew Label();
-					button->Text = i + " - "+ cards[i]->getID();
+					button->Text = cards[i]->getID()+" "+cards[i]->getName();
 					button->Dock = DockStyle::Fill; // Dock buttons to fill the cell
-
+					button->TextAlign = ContentAlignment::MiddleCenter; // Center the text
+					button->AutoSize = true;
 					// Add button to the table layout
 					tableLayoutPanel1->Controls->Add(button, col, row);
 					i++;
 				}
 			}
-
 			// Add the TableLayoutPanel to the form
 			//this->Controls->Add(tableLayoutPanel1);
 		}
@@ -94,14 +94,15 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->tableLayoutPanel1->ColumnCount = 1;
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				50)));
+				100)));
 			this->tableLayoutPanel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->tableLayoutPanel1->Location = System::Drawing::Point(141, 132);
+			this->tableLayoutPanel1->Margin = System::Windows::Forms::Padding(0);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(197, 100);
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle()));
+			this->tableLayoutPanel1->Size = System::Drawing::Size(197, 86);
 			this->tableLayoutPanel1->TabIndex = 0;
 			// 
 			// panel3

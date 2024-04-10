@@ -297,7 +297,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 
 		String ^ name = textUsername->Text;
 		String ^ numStr = textBox1->Text;
-		int num = System::Convert::ToInt32(numStr);
+		int num;
 		if (numStr == "" || name == "")
 		{
 			MessageBox::Show("Please fill all fields");
@@ -308,13 +308,14 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 
 				DataManager::addnewCard(name, num);
 				MessageBox::Show("Card added successfully");
-				textUsername->Text = "";
-				textBox1->Text = "";
 
 			}
 			else {
 				MessageBox::Show("Please enter a valid number");
+
 			}
+				textUsername->Text = "";
+				textBox1->Text = "";
 		}
 }
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {

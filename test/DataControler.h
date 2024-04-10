@@ -12,7 +12,6 @@ public ref class DataManager
 {
 private:
     static List<CardsInformation^>^ cardsVector;
-
 public:
     // Method to get the reference to the cardsVector
     static List<CardsInformation^>^ GetCardsVector()
@@ -26,7 +25,9 @@ public:
     static int getID(int i) {
         return cardsVector[i]->getID();
     }
-
+    static String^ getName(int i) {
+		return cardsVector[i]->getName();
+	}
     static int getSize() {
 		return cardsVector->Count;
 	}

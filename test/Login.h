@@ -110,9 +110,8 @@ namespace test {
 			this->textUsername->HideSelection = false;
 			this->textUsername->Location = System::Drawing::Point(251, 356);
 			this->textUsername->Margin = System::Windows::Forms::Padding(4);
-			this->textUsername->Multiline = true;
 			this->textUsername->Name = L"textUsername";
-			this->textUsername->Size = System::Drawing::Size(320, 39);
+			this->textUsername->Size = System::Drawing::Size(320, 34);
 			this->textUsername->TabIndex = 18;
 			// 
 			// textPassword
@@ -124,10 +123,9 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->textPassword->Location = System::Drawing::Point(251, 410);
 			this->textPassword->Margin = System::Windows::Forms::Padding(4);
-			this->textPassword->Multiline = true;
 			this->textPassword->Name = L"textPassword";
 			this->textPassword->PasswordChar = '*';
-			this->textPassword->Size = System::Drawing::Size(320, 39);
+			this->textPassword->Size = System::Drawing::Size(320, 38);
 			this->textPassword->TabIndex = 24;
 			// 
 			// pictureBox2

@@ -26,6 +26,7 @@ Class DataManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   Methods:
     GetCardsVector(): PrivateScope, Public, Static, HideBySig
     getID(Int32): PrivateScope, Public, Static, HideBySig
+    getName(Int32): PrivateScope, Public, Static, HideBySig
     getSize(): PrivateScope, Public, Static, HideBySig
     addnewCard(String, Int32): PrivateScope, Public, Static, HideBySig
     AddCard(CardsInformation): PrivateScope, Public, Static, HideBySig

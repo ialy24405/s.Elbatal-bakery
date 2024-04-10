@@ -24,6 +24,9 @@ public:
             name = value;
         }
     }
+    System::String^ getName() {
+        return name;
+        }
     property int FamilySize {
         int get() {
             return familySize;
