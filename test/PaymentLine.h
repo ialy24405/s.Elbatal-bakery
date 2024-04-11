@@ -1,5 +1,5 @@
 #pragma once
-
+#include "DataControler.h"
 namespace test {
 
 	using namespace System;
@@ -45,6 +45,7 @@ namespace test {
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label3;
 
 
 	protected:
@@ -73,6 +74,7 @@ namespace test {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -153,12 +155,12 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->textBox1->Location = System::Drawing::Point(290, 436);
 			this->textBox1->Margin = System::Windows::Forms::Padding(4);
-			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(101, 30);
+			this->textBox1->Size = System::Drawing::Size(101, 34);
 			this->textBox1->TabIndex = 39;
 			this->textBox1->Text = L"Num";
 			this->textBox1->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &PaymentLine::textBox1_TextChanged);
 			// 
 			// pictureBox2
 			// 
@@ -200,6 +202,7 @@ namespace test {
 			this->button1->TabIndex = 40;
 			this->button1->Text = L"Add";
 			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &PaymentLine::button1_Click);
 			// 
 			// label6
 			// 
@@ -217,6 +220,22 @@ namespace test {
 			this->label6->Text = L"Exit";
 			this->label6->Click += gcnew System::EventHandler(this, &PaymentLine::label6_Click);
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(451, 578);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(85, 36);
+			this->label3->TabIndex = 43;
+			this->label3->Text = L"Back";
+			this->label3->Click += gcnew System::EventHandler(this, &PaymentLine::label3_Click);
+			// 
 			// PaymentLine
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -226,6 +245,7 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(775, 720);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
@@ -250,6 +270,38 @@ namespace test {
 	}
 private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	bool gender;
+	int age;
+	if (radioButton1->Checked)
+	{
+		gender = true;
+	}
+	else if (radioButton2->Checked) {
+		gender = false;
+	}
+	else {
+		MessageBox::Show("Please select your gender");
+	}
+	if (textBox1->Text == "Num"||textBox1->Text == "") {
+		MessageBox::Show("Please enter your age");
+	}
+	else {
+		age = Convert::ToInt32(textBox1->Text);
+		int customerID = DataManager::AddCustomer(gender, age);
+		DataManager::AddToPayingQueue(customerID);
+		MessageBox::Show("Added successfully\nyour queue ID : "+customerID);
+		textBox1->Text = "";
+		radioButton1->Checked = false;
+		radioButton2->Checked = false;
+
+	}
+}
+private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

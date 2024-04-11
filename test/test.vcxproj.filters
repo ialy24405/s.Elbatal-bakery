@@ -80,5 +80,8 @@
     <ClInclude Include="ViewCards.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CustomerInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -143,6 +143,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="cardsInformation.h" />
+    <ClInclude Include="CustomerInformation.h" />
     <ClInclude Include="DataControler.h" />
     <ClInclude Include="Home.h">
       <FileType>CppForm</FileType>

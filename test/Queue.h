@@ -2,14 +2,14 @@
 #define max_size 100 // Define the maximum size of the queues
 
 template <typename T>
-ref class Queue {
+ref class Queue1 {
 private:
     array<T>^ arr;
     int front;
     int rear;
 public:
-    Queue() {
-        arr = gcnew array<T>(max_size);
+    Queue1() {
+        arr = gcnew array<T>(100);
         front = -1;
         rear = -1;
     }
@@ -19,7 +19,7 @@ public:
     }
 
     bool IsFull() {
-        return rear == max_size - 1;
+        return rear == 100 - 1;
     }
 
     void Enqueue(T value) {

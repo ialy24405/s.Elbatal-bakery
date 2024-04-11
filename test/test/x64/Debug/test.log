@@ -1,56 +1,34 @@
-﻿  AddCard.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(49,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'AddCard.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
-  see declaration of 'CardsInformation'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(72,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'AddCard.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
-  see declaration of 'CardsInformation'
-  
-  Home.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(49,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+﻿  Home.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(105,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'Home.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(72,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(128,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'Home.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
   Login.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(49,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(105,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'Login.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(72,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(128,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'Login.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Login.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  Register.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(49,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'Register.cpp')
+  PaymentLine.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(105,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'PaymentLine.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(72,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'Register.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
-  see declaration of 'CardsInformation'
-  
-  ViewCards.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(49,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'ViewCards.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
-  see declaration of 'CardsInformation'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(72,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'ViewCards.cpp')
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(128,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'PaymentLine.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   

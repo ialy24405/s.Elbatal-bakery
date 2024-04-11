@@ -29,9 +29,33 @@ Class Admin: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     setUserName(String): PrivateScope, Public, HideBySig
     getPassword(): PrivateScope, Public, HideBySig
     setPassword(String): PrivateScope, Public, HideBySig
+Class CustomerInformation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 BreadNum 'get set' : 
+    Int32 CustomerID 'get set' : 
+    Boolean Gender 'get set' : 
+    Int32 Age  'get set' : 
+  Methods:
+    get_Age(): PrivateScope, Public, HideBySig, SpecialName
+    set_Age(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Gender(): PrivateScope, Public, HideBySig, SpecialName
+    set_Gender(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig, SpecialName
+    get_CustomerID(): PrivateScope, Public, HideBySig, SpecialName
+    set_CustomerID(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_BreadNum(): PrivateScope, Public, HideBySig, SpecialName
+    set_BreadNum(Int32): PrivateScope, Public, HideBySig, SpecialName
 Class DataManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
+    GetPayingQueue(): PrivateScope, Public, Static, HideBySig
+    AddToPayingQueue(Int32): PrivateScope, Public, Static, HideBySig
+    GetCustomersVector(): PrivateScope, Public, Static, HideBySig
+    AddCustomer(Boolean(HasFieldMarshal), Int32): PrivateScope, Public, Static, HideBySig
+    AddCustomer(CustomerInformation): PrivateScope, Public, Static, HideBySig
+    getCustomerID(Int32): PrivateScope, Public, Static, HideBySig
+    CheckCustomer(Int32): PrivateScope, Public, Static, HideBySig
     GetAdminsList(): PrivateScope, Public, Static, HideBySig
     AddAdmin(String, String): PrivateScope, Public, Static, HideBySig
     AddAdmin(Admin): PrivateScope, Public, Static, HideBySig

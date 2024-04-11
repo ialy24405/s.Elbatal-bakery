@@ -1,5 +1,5 @@
 #pragma once
-
+#include "DataControler.h"
 namespace test {
 
 	using namespace System;
@@ -35,6 +35,16 @@ namespace test {
 			}
 		}
 	private: System::Windows::Forms::Panel^ panel3;
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::TextBox^ textUsername;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Panel^ panel2;
+	private: System::Windows::Forms::RadioButton^ radioButton2;
+	private: System::Windows::Forms::RadioButton^ radioButton1;
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label3;
 	protected:
 
 	private:
@@ -52,6 +62,17 @@ namespace test {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(BuyWithoutcard::typeid));
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->textUsername = (gcnew System::Windows::Forms::TextBox());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->radioButton2 = (gcnew System::Windows::Forms::RadioButton());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// panel3
@@ -66,6 +87,149 @@ namespace test {
 			this->panel3->Size = System::Drawing::Size(234, 203);
 			this->panel3->TabIndex = 34;
 			// 
+			// button1
+			// 
+			this->button1->BackColor = System::Drawing::Color::Black;
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button1->FlatAppearance->BorderSize = 0;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button1->Location = System::Drawing::Point(228, 507);
+			this->button1->Margin = System::Windows::Forms::Padding(1);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(329, 55);
+			this->button1->TabIndex = 64;
+			this->button1->Text = L"Add";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &BuyWithoutcard::button1_Click);
+			// 
+			// textUsername
+			// 
+			this->textUsername->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->textUsername->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->textUsername->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textUsername->HideSelection = false;
+			this->textUsername->Location = System::Drawing::Point(363, 330);
+			this->textUsername->Margin = System::Windows::Forms::Padding(4);
+			this->textUsername->Name = L"textUsername";
+			this->textUsername->Size = System::Drawing::Size(101, 41);
+			this->textUsername->TabIndex = 61;
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(303, 330);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(33, 31);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox1->TabIndex = 63;
+			this->pictureBox1->TabStop = false;
+			// 
+			// panel2
+			// 
+			this->panel2->BackColor = System::Drawing::Color::Black;
+			this->panel2->ImeMode = System::Windows::Forms::ImeMode::On;
+			this->panel2->Location = System::Drawing::Point(303, 375);
+			this->panel2->Margin = System::Windows::Forms::Padding(4);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(161, 1);
+			this->panel2->TabIndex = 62;
+			// 
+			// radioButton2
+			// 
+			this->radioButton2->AutoSize = true;
+			this->radioButton2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->radioButton2->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->radioButton2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->radioButton2->Location = System::Drawing::Point(289, 460);
+			this->radioButton2->Name = L"radioButton2";
+			this->radioButton2->Size = System::Drawing::Size(125, 34);
+			this->radioButton2->TabIndex = 60;
+			this->radioButton2->Text = L"Female";
+			this->radioButton2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->radioButton2->UseVisualStyleBackColor = false;
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->radioButton1->FlatStyle = System::Windows::Forms::FlatStyle::System;
+			this->radioButton1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->radioButton1->Location = System::Drawing::Point(289, 433);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(96, 34);
+			this->radioButton1->TabIndex = 59;
+			this->radioButton1->Text = L"Male";
+			this->radioButton1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->radioButton1->UseVisualStyleBackColor = false;
+			// 
+			// label2
+			// 
+			this->label2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->Location = System::Drawing::Point(237, 395);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(137, 35);
+			this->label2->TabIndex = 58;
+			this->label2->Text = L"Gender :";
+			// 
+			// label1
+			// 
+			this->label1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->Location = System::Drawing::Point(237, 330);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(67, 29);
+			this->label1->TabIndex = 57;
+			this->label1->Text = L"ID :";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(283, 582);
+			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(69, 36);
+			this->label6->TabIndex = 56;
+			this->label6->Text = L"Exit";
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(436, 582);
+			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(85, 36);
+			this->label3->TabIndex = 65;
+			this->label3->Text = L"Back";
+			this->label3->Click += gcnew System::EventHandler(this, &BuyWithoutcard::label3_Click);
+			// 
 			// BuyWithoutcard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -75,13 +239,59 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(775, 720);
+			this->Controls->Add(this->label3);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->textUsername);
+			this->Controls->Add(this->pictureBox1);
+			this->Controls->Add(this->panel2);
+			this->Controls->Add(this->radioButton2);
+			this->Controls->Add(this->radioButton1);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->label6);
 			this->Controls->Add(this->panel3);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"BuyWithoutcard";
 			this->Text = L"BuyWithoutcard";
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
-	};
+	private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	bool gender;
+	if (radioButton1->Checked)
+	{
+		gender = true;
+	}
+	else if (radioButton2->Checked)
+	{
+		gender = false;
+	}
+	else {
+		MessageBox::Show("Please choose your gender");
+		return;
+	}
+	String^ IDStr = textUsername->Text;
+	if (IDStr == "")
+	{
+		MessageBox::Show("Please enter your ID");
+		return;
+	}
+	int ID = Convert::ToInt32(IDStr);
+	if (!DataManager::CheckCustomer(ID)) {
+		MessageBox::Show("This ID is not exist");
+		return;
+	}
+	else {
+		
+	}
+
+
+}
+};
 }

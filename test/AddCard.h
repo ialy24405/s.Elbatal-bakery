@@ -329,7 +329,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 			if (Int32::TryParse(numStr, num)) {
 
 				int id = DataManager::addnewCard(name, num);
-				MessageBox::Show("Card added successfully your montly bread numbers : "+num*150+" your Id : "+id, "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				MessageBox::Show("Card added successfully \nyour montly bread numbers : "+num*150+"\nyour Id : "+id, "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
 
 			}
 			else {

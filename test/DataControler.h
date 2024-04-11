@@ -2,6 +2,7 @@
 #include <vector>
 #include"Admin.h"
 #include "CardsInformation.h"
+#include "CustomerInformation.h"
 using namespace System;
 using namespace System::ComponentModel;
 using namespace System::Collections;
@@ -14,7 +15,62 @@ public ref class DataManager
 private:
     static List<CardsInformation^>^ cardsVector;
     static List<Admin^>^ adminsList;
+    static List<CustomerInformation^>^ customersVector;
+    static int customerMaleID=0, customerFemaleID=0;
+    static List<int>^ PayingQueue;
 public:
+    // Method to get the reference to the PayingQueue
+    
+    static List<int>^ GetPayingQueue(){
+        if (PayingQueue == nullptr)
+		{
+			PayingQueue = gcnew List<int>();
+		}
+		return PayingQueue;
+    }
+    static void AddToPayingQueue(int id){
+		GetPayingQueue()->Add(id);
+	}
+    // Method to get the reference to the customersVector
+    
+    static List<CustomerInformation^>^ GetCustomersVector()
+	{
+		if (customersVector == nullptr)
+		{
+			customersVector = gcnew List<CustomerInformation^>();
+		}
+		return customersVector;
+	}
+    static void AddCustomer(CustomerInformation^ customer)
+        {
+        GetCustomersVector()->Add(customer);
+        }
+    static int AddCustomer(bool gender, int age) {
+        CustomerInformation^ customer = gcnew CustomerInformation(gender, age);
+        if (gender) {
+            customer->CustomerID = ++customerMaleID;
+        }
+        else {
+            customer->CustomerID = ++customerFemaleID;
+        }
+        GetCustomersVector()->Add(customer);
+        return customer->CustomerID;
+    }
+    static int getCustomerID(int i) {
+		return customersVector[i]->CustomerID;
+	}
+    static bool CheckCustomer(int id)
+    {
+        for (int i = 0; i < GetCustomersVector()->Count; i++)
+		{
+			if (GetCustomersVector()[i]->CustomerID == id)
+			{
+				return true;
+			}
+		}
+		return false;
+    }
+
     // Method to get the reference to the adminsList
     static List<Admin^>^ GetAdminsList()
 	{

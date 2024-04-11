@@ -48,6 +48,7 @@ namespace test {
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ label4;
 
 
 
@@ -81,6 +82,7 @@ namespace test {
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -177,7 +179,7 @@ namespace test {
 			this->textUsername->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textUsername->HideSelection = false;
-			this->textUsername->Location = System::Drawing::Point(327, 283);
+			this->textUsername->Location = System::Drawing::Point(327, 280);
 			this->textUsername->Margin = System::Windows::Forms::Padding(4);
 			this->textUsername->Name = L"textUsername";
 			this->textUsername->Size = System::Drawing::Size(101, 41);
@@ -274,6 +276,22 @@ namespace test {
 			this->label3->TabIndex = 52;
 			this->label3->Text = L"Card ID :";
 			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label4->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(437, 615);
+			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(85, 36);
+			this->label4->TabIndex = 66;
+			this->label4->Text = L"Back";
+			this->label4->Click += gcnew System::EventHandler(this, &BuyWithcard::label4_Click);
+			// 
 			// BuyWithcard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -283,6 +301,7 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(775, 720);
+			this->Controls->Add(this->label4);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->panel1);
@@ -317,6 +336,9 @@ private: System::Void textUsername_KeyDown(System::Object^ sender, System::Windo
 	if (e->KeyCode == Keys::Enter) {
 		textBox1->Focus();
 	}
+}
+private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
 }
 };
 }
