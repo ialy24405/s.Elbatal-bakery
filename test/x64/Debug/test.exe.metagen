@@ -86,6 +86,14 @@ Class DataManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     getSize(): PrivateScope, Public, Static, HideBySig
     addnewCard(String, Int32): PrivateScope, Public, Static, HideBySig
     AddCard(CardsInformation): PrivateScope, Public, Static, HideBySig
+    RemoveCard(String): PrivateScope, Public, Static, HideBySig
+    RemoveCard(Int32): PrivateScope, Public, Static, HideBySig
+    CheckCard(String): PrivateScope, Public, Static, HideBySig
+    CheckCard(Int32): PrivateScope, Public, Static, HideBySig
+    VaildBreadNum(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetRemainBread(Int32): PrivateScope, Public, Static, HideBySig
+    SetRemainBread(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    GetFamilySize(Int32): PrivateScope, Public, Static, HideBySig
 Class test.ViewCards: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

@@ -46,6 +46,9 @@ public:
         int get() {
             return monthlyBread;
         }
+        void set(int value) {
+			monthlyBread = value;
+		}
     }
     int getMonthlyBread() {
         return monthlyBread;

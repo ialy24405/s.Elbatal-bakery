@@ -1,5 +1,5 @@
 #pragma once
-
+#include "DataControler.h"
 namespace test {
 
 	using namespace System;
@@ -49,6 +49,8 @@ namespace test {
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::TextBox^ textBox2;
 
 
 
@@ -83,6 +85,8 @@ namespace test {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -93,7 +97,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->panel3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel3.BackgroundImage")));
 			this->panel3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->panel3->Location = System::Drawing::Point(242, 69);
+			this->panel3->Location = System::Drawing::Point(242, 59);
 			this->panel3->Margin = System::Windows::Forms::Padding(4);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(234, 203);
@@ -107,7 +111,7 @@ namespace test {
 			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(321, 615);
+			this->label6->Location = System::Drawing::Point(236, 633);
 			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(69, 36);
@@ -121,7 +125,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(201, 283);
+			this->label1->Location = System::Drawing::Point(200, 266);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(67, 29);
 			this->label1->TabIndex = 43;
@@ -135,7 +139,7 @@ namespace test {
 			this->radioButton2->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->radioButton2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton2->Location = System::Drawing::Point(253, 398);
+			this->radioButton2->Location = System::Drawing::Point(252, 381);
 			this->radioButton2->Name = L"radioButton2";
 			this->radioButton2->Size = System::Drawing::Size(125, 34);
 			this->radioButton2->TabIndex = 47;
@@ -151,7 +155,7 @@ namespace test {
 			this->radioButton1->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->radioButton1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton1->Location = System::Drawing::Point(253, 371);
+			this->radioButton1->Location = System::Drawing::Point(252, 354);
 			this->radioButton1->Name = L"radioButton1";
 			this->radioButton1->Size = System::Drawing::Size(96, 34);
 			this->radioButton1->TabIndex = 46;
@@ -165,7 +169,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(201, 333);
+			this->label2->Location = System::Drawing::Point(200, 316);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(137, 35);
 			this->label2->TabIndex = 45;
@@ -179,7 +183,7 @@ namespace test {
 			this->textUsername->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textUsername->HideSelection = false;
-			this->textUsername->Location = System::Drawing::Point(327, 280);
+			this->textUsername->Location = System::Drawing::Point(326, 263);
 			this->textUsername->Margin = System::Windows::Forms::Padding(4);
 			this->textUsername->Name = L"textUsername";
 			this->textUsername->Size = System::Drawing::Size(101, 41);
@@ -191,7 +195,7 @@ namespace test {
 			this->pictureBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(267, 283);
+			this->pictureBox1->Location = System::Drawing::Point(266, 266);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(33, 31);
@@ -203,7 +207,7 @@ namespace test {
 			// 
 			this->panel2->BackColor = System::Drawing::Color::Black;
 			this->panel2->ImeMode = System::Windows::Forms::ImeMode::On;
-			this->panel2->Location = System::Drawing::Point(267, 328);
+			this->panel2->Location = System::Drawing::Point(266, 311);
 			this->panel2->Margin = System::Windows::Forms::Padding(4);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(161, 1);
@@ -219,13 +223,14 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button1->Location = System::Drawing::Point(193, 549);
+			this->button1->Location = System::Drawing::Point(195, 577);
 			this->button1->Margin = System::Windows::Forms::Padding(1);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(329, 55);
 			this->button1->TabIndex = 51;
-			this->button1->Text = L"Add";
+			this->button1->Text = L"Pay";
 			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &BuyWithcard::button1_Click);
 			// 
 			// textBox1
 			// 
@@ -235,7 +240,7 @@ namespace test {
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox1->HideSelection = false;
-			this->textBox1->Location = System::Drawing::Point(289, 490);
+			this->textBox1->Location = System::Drawing::Point(288, 473);
 			this->textBox1->Margin = System::Windows::Forms::Padding(4);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(101, 41);
@@ -246,7 +251,7 @@ namespace test {
 			this->pictureBox2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(229, 490);
+			this->pictureBox2->Location = System::Drawing::Point(228, 473);
 			this->pictureBox2->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(33, 31);
@@ -258,7 +263,7 @@ namespace test {
 			// 
 			this->panel1->BackColor = System::Drawing::Color::Black;
 			this->panel1->ImeMode = System::Windows::Forms::ImeMode::On;
-			this->panel1->Location = System::Drawing::Point(229, 535);
+			this->panel1->Location = System::Drawing::Point(228, 518);
 			this->panel1->Margin = System::Windows::Forms::Padding(4);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(161, 1);
@@ -270,7 +275,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(201, 450);
+			this->label3->Location = System::Drawing::Point(200, 433);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(156, 36);
 			this->label3->TabIndex = 52;
@@ -284,13 +289,39 @@ namespace test {
 			this->label4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(437, 615);
+			this->label4->Location = System::Drawing::Point(391, 633);
 			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(85, 36);
 			this->label4->TabIndex = 66;
 			this->label4->Text = L"Back";
 			this->label4->Click += gcnew System::EventHandler(this, &BuyWithcard::label4_Click);
+			// 
+			// label5
+			// 
+			this->label5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->Location = System::Drawing::Point(200, 527);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(209, 36);
+			this->label5->TabIndex = 67;
+			this->label5->Text = L"No. of Bread :";
+			// 
+			// textBox2
+			// 
+			this->textBox2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->textBox2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox2->HideSelection = false;
+			this->textBox2->Location = System::Drawing::Point(416, 527);
+			this->textBox2->Margin = System::Windows::Forms::Padding(4);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(101, 41);
+			this->textBox2->TabIndex = 68;
 			// 
 			// BuyWithcard
 			// 
@@ -301,6 +332,8 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(775, 720);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->pictureBox2);
@@ -339,6 +372,66 @@ private: System::Void textUsername_KeyDown(System::Object^ sender, System::Windo
 }
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (textUsername->Text == "" || textBox1->Text == "" || textBox2->Text == ""||(radioButton1->Checked==false&&radioButton2->Checked==false)) {
+		MessageBox::Show("Please fill all the fields", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+	else {
+		int id = Convert::ToInt32(textUsername->Text);
+		try {
+			int front = DataManager::getFrontPayingQueue();
+			if (!DataManager::CheckCustomer(id) && (front != id)) {
+				MessageBox::Show("This ID is not exist");
+				return;
+			}
+			else {
+
+				int cardid = Convert::ToInt32(textBox1->Text);
+				if(DataManager::CheckCard(cardid) == false) {
+					MessageBox::Show("This card ID is not exist", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				}
+				else {
+				int bread = Convert::ToInt32(textBox2->Text);
+				if (DataManager::GetRemainBread(cardid)>=bread && DataManager::GetFamilySize(cardid)*5>=bread) {
+					float price = bread * 0.05;
+					int age = DataManager::getCustomerAge(id);	
+					DialogResult = MessageBox::Show("You should Pay: " + price + "\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
+					if (DialogResult == System::Windows::Forms::DialogResult::OK)
+					{
+						DataManager::setBreadCard(bread);
+						DataManager::setMoneyCard(price);
+						DataManager::SetRemainBread(cardid, bread);
+						List<int>^ information = gcnew List<int>();
+						information->Add(id);
+						information->Add(bread);
+						information->Add(age);
+						DataManager::AddToBakeryMaleQueue(information);
+						MessageBox::Show("You have successfully bought " + bread + " breads");
+						DataManager::RemoveFromPayingQueue();
+
+					}
+					else {
+						radioButton1->Checked = false;
+						radioButton2->Checked = false;
+						textUsername->Text = "";
+						textBox1->Text = "";
+
+					}
+
+				}
+				else {
+					MessageBox::Show("Please enter a valid number of bread", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				}
+
+				}
+			}
+		}
+		catch (Exception^ ex) {
+			MessageBox::Show("Not your turn", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+
+	}
 }
 };
 }

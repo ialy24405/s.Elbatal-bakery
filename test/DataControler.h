@@ -213,5 +213,90 @@ public:
 	{
 		GetCardsVector()->Add(card);
 	}
-    
+    static void RemoveCard(int id)
+	{
+		for (int i = 0; i < GetCardsVector()->Count; i++)
+		{
+			if (GetCardsVector()[i]->getID() == id)
+			{
+				GetCardsVector()->RemoveAt(i);
+				break;
+			}
+		}
+	}
+	static void RemoveCard(String^ name)
+	{
+		for (int i = 0; i < GetCardsVector()->Count; i++)
+		{
+			if (GetCardsVector()[i]->getName() == name)
+			{
+				GetCardsVector()->RemoveAt(i);
+				break;
+			}
+		}
+	}
+	static bool CheckCard(int id)
+	{
+		for (int i = 0; i < GetCardsVector()->Count; i++)
+		{
+			if (GetCardsVector()[i]->getID() == id)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	static bool CheckCard(String^ name)
+	{
+		for (int i = 0; i < GetCardsVector()->Count; i++)
+		{
+			if (GetCardsVector()[i]->getName() == name)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+    static bool VaildBreadNum(int id, int bread) {
+        		for (int i = 0; i < GetCustomersVector()->Count; i++)
+		{
+			if (GetCustomersVector()[i]->CustomerID == id)
+			{
+				if (GetCustomersVector()[i]->BreadNum >= bread)
+				{
+					return true;
+				}
+			}
+		}
+		return false;
+    }
+    static int GetRemainBread(int id) {
+        for (int i = 0; i < GetCardsVector()->Count; i++)
+        {
+            if (GetCardsVector()[i]->ID == id)
+            {
+                return GetCardsVector()[i]->MonthlyBread;
+            }
+        }
+        return 0;
+    }
+    static void SetRemainBread(int id, int bread) {
+		for (int i = 0; i < GetCardsVector()->Count; i++)
+		{
+			if (GetCardsVector()[i]->ID == id)
+			{
+				GetCardsVector()[i]->MonthlyBread -= bread;
+			}
+		}
+	}
+    static int GetFamilySize(int id) {
+        for (int i = 0; i < GetCardsVector()->Count; i++)
+        {
+            if (GetCardsVector()[i]->ID == id)
+            {
+                return GetCardsVector()[i]->FamilySize;
+            }
+        }
+        return 0;
+	}
 };

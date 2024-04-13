@@ -285,6 +285,7 @@ namespace test {
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"BuyWithoutcard";
 			this->Text = L"BuyWithoutcard";
+			this->Load += gcnew System::EventHandler(this, &BuyWithoutcard::BuyWithoutcard_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -375,6 +376,8 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 
 
+}
+private: System::Void BuyWithoutcard_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
