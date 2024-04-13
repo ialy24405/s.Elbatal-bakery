@@ -3,6 +3,8 @@
 #include"PaymentLine.h"
 #include"BuyWithcard.h"
 #include"BuyWithoutcard.h"
+#include"BakeryQueue.h"
+#include "TotalRevenue.h"
 namespace test {
 
 	using namespace System;
@@ -195,6 +197,7 @@ namespace test {
 			this->label7->TabIndex = 42;
 			this->label7->Text = L"Total Bakery revenue";
 			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label7->Click += gcnew System::EventHandler(this, &Home::label7_Click);
 			// 
 			// label8
 			// 
@@ -245,6 +248,10 @@ namespace test {
 		this->Show();
 	}
 private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Hide();
+	BakeryQueue bakeryQueue;
+	bakeryQueue.ShowDialog();
+	this->Show();
 }
 private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 
@@ -270,6 +277,13 @@ private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 }
 private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
+	TotalRevenue totalRevenue;
+	this->Hide();
+	totalRevenue.ShowDialog();
+	this->Show();
+
 }
 };
 }

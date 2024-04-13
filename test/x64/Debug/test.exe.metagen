@@ -1,10 +1,12 @@
   test.AddCard.resources - Embedded, ContainedInManifestFile, 
+  test.BakeryQueue.resources - Embedded, ContainedInManifestFile, 
   test.BuyWithcard.resources - Embedded, ContainedInManifestFile, 
   test.BuyWithoutcard.resources - Embedded, ContainedInManifestFile, 
   test.Home.resources - Embedded, ContainedInManifestFile, 
   test.Login.resources - Embedded, ContainedInManifestFile, 
   test.PaymentLine.resources - Embedded, ContainedInManifestFile, 
   test.Register.resources - Embedded, ContainedInManifestFile, 
+  test.TotalRevenue.resources - Embedded, ContainedInManifestFile, 
   test.ViewCards.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly test, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
@@ -50,17 +52,19 @@ Class DataManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     getMoneyNoCard(): PrivateScope, Public, Static, HideBySig
-    setMoneyNoCard(Int32): PrivateScope, Public, Static, HideBySig
+    setMoneyNoCard(Single): PrivateScope, Public, Static, HideBySig
     getMoneyCard(): PrivateScope, Public, Static, HideBySig
-    setMoneyCard(Int32): PrivateScope, Public, Static, HideBySig
+    setMoneyCard(Single): PrivateScope, Public, Static, HideBySig
     getBreadCard(): PrivateScope, Public, Static, HideBySig
     setBreadCard(Int32): PrivateScope, Public, Static, HideBySig
     getBreadNoCard(): PrivateScope, Public, Static, HideBySig
     setBreadNoCard(Int32): PrivateScope, Public, Static, HideBySig
     getTotalMoney(): PrivateScope, Public, Static, HideBySig
-    setTotalMoney(Int32): PrivateScope, Public, Static, HideBySig
+    setTotalMoney(Single): PrivateScope, Public, Static, HideBySig
     getTotalBread(): PrivateScope, Public, Static, HideBySig
     setTotalBread(Int32): PrivateScope, Public, Static, HideBySig
+    GetBakeryFemaleQueue(): PrivateScope, Public, Static, HideBySig
+    AddToBakeryFemaleQueue(List`1): PrivateScope, Public, Static, HideBySig
     GetBakeryMaleQueue(): PrivateScope, Public, Static, HideBySig
     AddToBakeryMaleQueue(List`1): PrivateScope, Public, Static, HideBySig
     GetPayingQueue(): PrivateScope, Public, Static, HideBySig
@@ -102,6 +106,12 @@ Class test.ViewCards: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class test.AddCard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class test.BakeryQueue: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    display_Malequeue(): PrivateScope, Public, HideBySig
+    display_FeMalequeue(): PrivateScope, Public, HideBySig
 Class test.BuyWithcard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -109,6 +119,9 @@ Class test.BuyWithoutcard: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class test.PaymentLine: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class test.TotalRevenue: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class test.Home: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

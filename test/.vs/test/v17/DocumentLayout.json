@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\DataControler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:DataControler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:TotalRevenue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:TotalRevenue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,31 @@
       "DocumentGroups": [
         {
           "DockedHeight": 304,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TotalRevenue.h",
+              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h",
+              "RelativeDocumentMoniker": "TotalRevenue.h",
+              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h",
+              "RelativeToolTip": "TotalRevenue.h",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-13T15:47:16.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TotalRevenue.h [Design]",
+              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h",
+              "RelativeDocumentMoniker": "TotalRevenue.h",
+              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h [Design]",
+              "RelativeToolTip": "TotalRevenue.h [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-13T15:35:55.854Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +55,7 @@
               "RelativeDocumentMoniker": "DataControler.h",
               "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\DataControler.h",
               "RelativeToolTip": "DataControler.h",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAcwCsBAAARAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwCkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-09T21:57:51.619Z",
               "EditorCaption": ""

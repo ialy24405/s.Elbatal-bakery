@@ -401,13 +401,20 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 					{
 						DataManager::setBreadCard(bread);
 						DataManager::setMoneyCard(price);
+						DataManager::setTotalBread(bread);
+						DataManager::setTotalMoney(price);
 						DataManager::SetRemainBread(cardid, bread);
 						List<int>^ information = gcnew List<int>();
 						information->Add(id);
 						information->Add(bread);
 						information->Add(age);
-						DataManager::AddToBakeryMaleQueue(information);
-						MessageBox::Show("You have successfully bought " + bread + " breads");
+						if (radioButton1->Checked) {
+							DataManager::AddToBakeryMaleQueue(information);
+						}
+						else {
+							DataManager::AddToBakeryFemaleQueue(information);
+						}
+						MessageBox::Show("You have successfully bought " + bread + " breads your id : "+id);
 						DataManager::RemoveFromPayingQueue();
 
 					}

@@ -123,12 +123,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddCard.cpp" />
+    <ClCompile Include="BakeryQueue.cpp" />
     <ClCompile Include="BuyWithcard.cpp" />
     <ClCompile Include="BuyWithoutcard.cpp" />
     <ClCompile Include="Home.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="PaymentLine.cpp" />
     <ClCompile Include="Register.cpp" />
+    <ClCompile Include="TotalRevenue.cpp" />
     <ClCompile Include="ViewCards.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +138,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="BakeryQueue.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="BuyWithcard.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -159,6 +164,9 @@
     <ClInclude Include="Register.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="TotalRevenue.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="ViewCards.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -166,6 +174,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AddCard.resx">
       <DependentUpon>AddCard.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BakeryQueue.resx">
+      <DependentUpon>BakeryQueue.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuyWithcard.resx">
       <DependentUpon>BuyWithcard.h</DependentUpon>
@@ -184,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalRevenue.resx">
+      <DependentUpon>TotalRevenue.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewCards.resx">
       <DependentUpon>ViewCards.h</DependentUpon>

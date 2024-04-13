@@ -20,43 +20,48 @@ private:
     static List<CustomerInformation^>^ customersVector;
     static int customerMaleID=0, customerFemaleID=0;
     static Queue1<int>^ PayingQueue;
-    static PriorityQueue<List<int>^>^ bakeryMaleQueue, bakeryFemaleQueue;
-    static int moneyNoCard = 0, moneyCard = 0;
-    static int breadCard = 0, breadNoCard = 0;
-    static int totalMoney = 0, totalBread = 0;
+    static PriorityQueue<List<int>^>^ bakeryMaleQueue;
+    static PriorityQueue<List<int>^>^ bakeryFemaleQueue;
+    static float moneyNoCard = 0;
+    static float moneyCard = 0;
+    static int breadCard = 0;
+    static int breadNoCard = 0;
+    static float totalMoney = 0;
+    static int totalBread = 0;
 public:
-    static int getMoneyNoCard() {
+
+    static float getMoneyNoCard() {
         return moneyNoCard;
         }
-    static void setMoneyNoCard(int money) {
+    static void setMoneyNoCard(float money) {
         moneyNoCard += money;
-        setTotalMoney(money);
+        //setTotalMoney(money);
 		}
-    static int getMoneyCard() {
+    static float getMoneyCard() {
 		return moneyCard;
         }
-    static void setMoneyCard(int money) {
-        moneyCard = money;
-        setTotalMoney(money);
+    static void setMoneyCard(float money) {
+        moneyCard += money;
+        //setTotalMoney(money);
         }
     static int getBreadCard() {
         return breadCard;
 		}
     static void setBreadCard(int bread) {
-		breadCard = bread;
-        setTotalBread(bread);
+		breadCard += bread;
+        //setTotalBread(bread);
         }
     static int getBreadNoCard() {
         return breadNoCard;
 		}
     static void setBreadNoCard(int bread) {
 		breadNoCard += bread;
-        setTotalBread(bread);
+        //setTotalBread(bread);
 		}
-    static int getTotalMoney() {
+    static float getTotalMoney() {
         return totalMoney;
         }
-    static void setTotalMoney(int money) {
+    static void setTotalMoney(float money) {
         totalMoney += money;
 		}
     static int getTotalBread() {
@@ -65,6 +70,17 @@ public:
     static void setTotalBread(int bread) {
         totalBread += bread;
 		}
+    // Method to get the reference to the FemaleQueue
+    static PriorityQueue<List<int>^>^ GetBakeryFemaleQueue() {
+		if (bakeryFemaleQueue == nullptr)
+		{
+			bakeryFemaleQueue = gcnew PriorityQueue<List<int>^>();
+		}
+        return bakeryFemaleQueue;
+        }
+    static void AddToBakeryFemaleQueue(List<int>^ list) {
+        GetBakeryFemaleQueue()->Enqueue(list);
+        }
 
     // Method to get the reference to the MaleQueue
     static PriorityQueue<List<int>^>^ GetBakeryMaleQueue() {
@@ -74,6 +90,7 @@ public:
         }
 		return bakeryMaleQueue;
     }
+
     static void AddToBakeryMaleQueue(List<int>^ list) {
 		GetBakeryMaleQueue()->Enqueue(list);
         }

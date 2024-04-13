@@ -1,14 +1,21 @@
 #pragma once
+#include "Windows.h"
 template <typename T>
 ref class PriorityQueue {
 private:
-    array<T>^ arr;
     int size;
 public:
+    array<T>^ arr;
     PriorityQueue() {
         arr = gcnew array<T>(max_size);
         size = 0;
     }
+    PriorityQueue(PriorityQueue<T>^ other) {
+        arr = gcnew cli::array<T>(max_size);
+        size = other->size;
+        Array::Copy(other->arr, arr, other->size);
+    }
+
 
     bool IsEmpty() {
         return size == 0;
@@ -52,4 +59,17 @@ public:
         }
         return arr[0];
     }
+    
+    void Clear() {
+		size = 0;
+	}
+    int Count() {
+		return size;
+	}
+	void Print() {
+		for (int i = 0; i < size; i++) {
+			Console::WriteLine(arr[i]);
+		}
+	}
+	//static const int max_size = 100;
 };

@@ -39,6 +39,12 @@
     <ClCompile Include="ViewCards.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BakeryQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TotalRevenue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
@@ -81,6 +87,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CustomerInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BakeryQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TotalRevenue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

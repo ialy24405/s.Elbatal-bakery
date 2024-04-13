@@ -345,13 +345,18 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 			{
 				DataManager::setBreadNoCard(bread);
 				DataManager::setMoneyNoCard(price);
+				DataManager::setTotalBread(bread);
+				DataManager::setTotalMoney(price);
 				DataManager::SetCustomerBread(ID, bread);
 				List<int>^ information = gcnew List<int>();
 				information->Add(ID);
 				information->Add(bread);
 				information->Add(age);
-				DataManager::AddToBakeryMaleQueue(information);
-				MessageBox::Show("You have successfully bought " + bread + " breads");
+				if(gender)
+					DataManager::AddToBakeryMaleQueue(information);
+				else
+					DataManager::AddToBakeryFemaleQueue(information);
+				MessageBox::Show("You have successfully bought " + bread + " breads your id :"+ID);
 				DataManager::RemoveFromPayingQueue();
 
 			}

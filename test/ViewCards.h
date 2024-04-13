@@ -109,6 +109,7 @@ namespace test {
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle()));
 			this->tableLayoutPanel1->Size = System::Drawing::Size(197, 86);
 			this->tableLayoutPanel1->TabIndex = 0;
+			this->tableLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ViewCards::tableLayoutPanel1_Paint);
 			// 
 			// panel3
 			// 
@@ -198,6 +199,8 @@ private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e)
 }
 private: System::Void label2_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void tableLayoutPanel1_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
 };
 }

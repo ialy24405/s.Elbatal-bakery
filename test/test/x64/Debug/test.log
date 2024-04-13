@@ -1,20 +1,83 @@
-﻿  BuyWithcard.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(70,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'BuyWithcard.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(3,11):
+﻿  AddCard.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'AddCard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
   see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(82,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'AddCard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+  (compiling source file 'AddCard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
+  see declaration of 'Queue1<int>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'AddCard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'AddCard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+  BakeryQueue.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'BakeryQueue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'BakeryQueue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+  (compiling source file 'BakeryQueue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
+  see declaration of 'Queue1<int>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'BakeryQueue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'BakeryQueue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(330,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'BakeryQueue.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(342,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'BakeryQueue.cpp')
+  
+  BuyWithcard.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'BuyWithcard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'BuyWithcard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
   (compiling source file 'BuyWithcard.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
   see declaration of 'Queue1<int>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(190,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'BuyWithcard.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(213,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'BuyWithcard.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
@@ -22,29 +85,66 @@ C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(213,2): warn
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(397,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'BuyWithcard.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(403,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(437,21): warning C4101: 'ex': unreferenced local variable
   (compiling source file 'BuyWithcard.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(430,21): warning C4101: 'ex': unreferenced local variable
-  (compiling source file 'BuyWithcard.cpp')
+  BuyWithoutcard.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'BuyWithoutcard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'BuyWithoutcard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+  (compiling source file 'BuyWithoutcard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
+  see declaration of 'Queue1<int>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'BuyWithoutcard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'BuyWithoutcard.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(347,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'BuyWithoutcard.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(349,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'BuyWithoutcard.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(373,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'BuyWithoutcard.cpp')
   
   Home.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(70,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   (compiling source file 'Home.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(3,11):
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
   see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(82,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'Home.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
   (compiling source file 'Home.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
   see declaration of 'Queue1<int>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(190,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'Home.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(213,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'Home.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
@@ -52,32 +152,46 @@ C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(213,2): warn
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(397,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(403,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(437,21): warning C4101: 'ex': unreferenced local variable
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(430,21): warning C4101: 'ex': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(347,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(368,20): warning C4101: 'e': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(349,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Home.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(373,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'Home.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(330,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'Home.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(342,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Home.cpp')
   
   Login.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(70,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   (compiling source file 'Login.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(3,11):
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
   see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(82,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'Login.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
   (compiling source file 'Login.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
   see declaration of 'Queue1<int>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(190,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'Login.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(213,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
   (compiling source file 'Login.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
@@ -85,16 +199,129 @@ C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(213,2): warn
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(397,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(403,33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(437,21): warning C4101: 'ex': unreferenced local variable
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(430,21): warning C4101: 'ex': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(347,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(368,20): warning C4101: 'e': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(349,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'Login.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(373,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'Login.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(330,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'Login.cpp')
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(342,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Login.cpp')
   
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Login.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  PaymentLine.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'PaymentLine.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'PaymentLine.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+  (compiling source file 'PaymentLine.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
+  see declaration of 'Queue1<int>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'PaymentLine.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'PaymentLine.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+  Register.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'Register.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'Register.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+  (compiling source file 'Register.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
+  see declaration of 'Queue1<int>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'Register.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'Register.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+  TotalRevenue.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'TotalRevenue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'TotalRevenue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+  (compiling source file 'TotalRevenue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
+  see declaration of 'Queue1<int>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'TotalRevenue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'TotalRevenue.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+  ViewCards.cpp
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'ViewCards.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'ViewCards.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+  (compiling source file 'ViewCards.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
+  see declaration of 'Queue1<int>'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'ViewCards.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'ViewCards.cpp')
+  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+  see declaration of 'CardsInformation'
+  
   Generating Code...
   AddCard.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   test.vcxproj -> C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\x64\Debug\test.exe
