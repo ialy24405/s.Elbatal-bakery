@@ -49,13 +49,33 @@ Class CustomerInformation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class DataManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
+    getMoneyNoCard(): PrivateScope, Public, Static, HideBySig
+    setMoneyNoCard(Int32): PrivateScope, Public, Static, HideBySig
+    getMoneyCard(): PrivateScope, Public, Static, HideBySig
+    setMoneyCard(Int32): PrivateScope, Public, Static, HideBySig
+    getBreadCard(): PrivateScope, Public, Static, HideBySig
+    setBreadCard(Int32): PrivateScope, Public, Static, HideBySig
+    getBreadNoCard(): PrivateScope, Public, Static, HideBySig
+    setBreadNoCard(Int32): PrivateScope, Public, Static, HideBySig
+    getTotalMoney(): PrivateScope, Public, Static, HideBySig
+    setTotalMoney(Int32): PrivateScope, Public, Static, HideBySig
+    getTotalBread(): PrivateScope, Public, Static, HideBySig
+    setTotalBread(Int32): PrivateScope, Public, Static, HideBySig
+    GetBakeryMaleQueue(): PrivateScope, Public, Static, HideBySig
+    AddToBakeryMaleQueue(List`1): PrivateScope, Public, Static, HideBySig
     GetPayingQueue(): PrivateScope, Public, Static, HideBySig
     AddToPayingQueue(Int32): PrivateScope, Public, Static, HideBySig
+    RemoveFromPayingQueue(): PrivateScope, Public, Static, HideBySig
+    getFrontPayingQueue(): PrivateScope, Public, Static, HideBySig
     GetCustomersVector(): PrivateScope, Public, Static, HideBySig
     AddCustomer(Boolean(HasFieldMarshal), Int32): PrivateScope, Public, Static, HideBySig
     AddCustomer(CustomerInformation): PrivateScope, Public, Static, HideBySig
     getCustomerID(Int32): PrivateScope, Public, Static, HideBySig
+    getCustomerBread(Int32): PrivateScope, Public, Static, HideBySig
+    getCustomerGender(Int32): PrivateScope, Public, Static, HideBySig
+    getCustomerAge(Int32): PrivateScope, Public, Static, HideBySig
     CheckCustomer(Int32): PrivateScope, Public, Static, HideBySig
+    SetCustomerBread(Int32, Int32): PrivateScope, Public, Static, HideBySig
     GetAdminsList(): PrivateScope, Public, Static, HideBySig
     AddAdmin(String, String): PrivateScope, Public, Static, HideBySig
     AddAdmin(Admin): PrivateScope, Public, Static, HideBySig

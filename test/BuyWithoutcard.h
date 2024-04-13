@@ -45,6 +45,8 @@ namespace test {
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::TextBox^ textBox1;
 	protected:
 
 	private:
@@ -72,6 +74,8 @@ namespace test {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -97,12 +101,12 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button1->Location = System::Drawing::Point(228, 507);
+			this->button1->Location = System::Drawing::Point(227, 576);
 			this->button1->Margin = System::Windows::Forms::Padding(1);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(329, 55);
 			this->button1->TabIndex = 64;
-			this->button1->Text = L"Add";
+			this->button1->Text = L"Pay";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &BuyWithoutcard::button1_Click);
 			// 
@@ -207,7 +211,7 @@ namespace test {
 			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(283, 582);
+			this->label6->Location = System::Drawing::Point(283, 632);
 			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(69, 36);
@@ -222,13 +226,39 @@ namespace test {
 			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(436, 582);
+			this->label3->Location = System::Drawing::Point(441, 632);
 			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(85, 36);
 			this->label3->TabIndex = 65;
 			this->label3->Text = L"Back";
 			this->label3->Click += gcnew System::EventHandler(this, &BuyWithoutcard::label3_Click);
+			// 
+			// label4
+			// 
+			this->label4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(221, 522);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(218, 35);
+			this->label4->TabIndex = 66;
+			this->label4->Text = L"No. of Breads :";
+			// 
+			// textBox1
+			// 
+			this->textBox1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->textBox1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox1->HideSelection = false;
+			this->textBox1->Location = System::Drawing::Point(446, 517);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(101, 41);
+			this->textBox1->TabIndex = 67;
 			// 
 			// BuyWithoutcard
 			// 
@@ -239,6 +269,8 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(775, 720);
+			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textUsername);
@@ -283,12 +315,63 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		return;
 	}
 	int ID = Convert::ToInt32(IDStr);
-	if (!DataManager::CheckCustomer(ID)) {
+	try
+	{
+	int front = DataManager::getFrontPayingQueue();
+
+	if (!DataManager::CheckCustomer(ID)&&(front!=ID)) {
 		MessageBox::Show("This ID is not exist");
 		return;
 	}
 	else {
-		
+		String^ breadStr = textBox1->Text;
+		if (breadStr == "")
+		{
+			MessageBox::Show("Please enter the number of breads");
+			return;
+		}
+		int bread = Convert::ToInt32(breadStr);
+		if (bread <= 0)
+		{
+			MessageBox::Show("Please enter a valid number of breads");
+			return;
+		}
+		else {
+			int price = bread * 1;
+			int age = DataManager::getCustomerAge(ID);
+			DialogResult = MessageBox::Show("You should Pay: " + price + "\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
+			if (DialogResult == System::Windows::Forms::DialogResult::OK)
+			{
+				DataManager::setBreadNoCard(bread);
+				DataManager::setMoneyNoCard(price);
+				DataManager::SetCustomerBread(ID, bread);
+				List<int>^ information = gcnew List<int>();
+				information->Add(ID);
+				information->Add(bread);
+				information->Add(age);
+				DataManager::AddToBakeryMaleQueue(information);
+				MessageBox::Show("You have successfully bought " + bread + " breads");
+				DataManager::RemoveFromPayingQueue();
+
+			}
+			else {
+				radioButton1->Checked = false;
+				radioButton2->Checked = false;
+				textUsername->Text = "";
+				textBox1->Text = "";
+
+			}
+		}
+	}
+	}
+	catch (Exception^ e)
+	{
+		MessageBox::Show("There is no one in the queue");
+		radioButton1->Checked = false;
+		radioButton2->Checked = false;
+		textUsername->Text = "";
+		textBox1->Text = "";
+		return;
 	}
 
 

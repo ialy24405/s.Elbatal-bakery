@@ -25,7 +25,7 @@ public:
         }
         int i;
         for (i = size - 1; i >= 0; --i) {
-            if (arr[i] < value) // Assuming T is a comparable type
+            if (arr[i][2] < value[2]&&value[2]>=60) // Assuming T is a comparable type
                 arr[i + 1] = arr[i];
             else
                 break;
