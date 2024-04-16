@@ -96,10 +96,12 @@ namespace test {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel1;
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
-	private: System::Windows::Forms::Label^ label6;
-	private: System::Windows::Forms::Label^ label3;
+
+
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button3;
 	protected:
 
 	private:
@@ -122,10 +124,10 @@ namespace test {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// panel3
@@ -160,7 +162,8 @@ namespace test {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(197, 29);
 			this->label1->TabIndex = 34;
-			this->label1->Text = L"Male Queue :";
+			this->label1->Text = L"Male Queue";
+			this->label1->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			this->label1->Click += gcnew System::EventHandler(this, &BakeryQueue::label1_Click);
 			// 
 			// label2
@@ -173,7 +176,7 @@ namespace test {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(197, 29);
 			this->label2->TabIndex = 35;
-			this->label2->Text = L"Female queue :";
+			this->label2->Text = L"Female Queue";
 			// 
 			// tableLayoutPanel1
 			// 
@@ -213,38 +216,6 @@ namespace test {
 			this->tableLayoutPanel2->TabIndex = 37;
 			this->tableLayoutPanel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &BakeryQueue::tableLayoutPanel2_Paint);
 			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(164, 147);
-			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(69, 36);
-			this->label6->TabIndex = 42;
-			this->label6->Text = L"Exit";
-			this->label6->Click += gcnew System::EventHandler(this, &BakeryQueue::label6_Click);
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label3->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(497, 147);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(85, 36);
-			this->label3->TabIndex = 43;
-			this->label3->Text = L"Back";
-			this->label3->Click += gcnew System::EventHandler(this, &BakeryQueue::label3_Click);
-			// 
 			// button1
 			// 
 			this->button1->BackColor = System::Drawing::Color::Black;
@@ -260,7 +231,7 @@ namespace test {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(197, 55);
 			this->button1->TabIndex = 52;
-			this->button1->Text = L"ready";
+			this->button1->Text = L"Ready";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &BakeryQueue::button1_Click);
 			// 
@@ -283,6 +254,36 @@ namespace test {
 			this->button2->UseVisualStyleBackColor = false;
 			this->button2->Click += gcnew System::EventHandler(this, &BakeryQueue::button2_Click);
 			// 
+			// button4
+			// 
+			this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
+			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button4->Location = System::Drawing::Point(99, 147);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(149, 45);
+			this->button4->TabIndex = 54;
+			this->button4->Text = L"Exit";
+			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &BakeryQueue::button4_Click);
+			// 
+			// button3
+			// 
+			this->button3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button3->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
+			this->button3->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button3->Location = System::Drawing::Point(496, 147);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(149, 45);
+			this->button3->TabIndex = 55;
+			this->button3->Text = L"Back";
+			this->button3->UseVisualStyleBackColor = false;
+			this->button3->Click += gcnew System::EventHandler(this, &BakeryQueue::button3_Click);
+			// 
 			// BakeryQueue
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -291,11 +292,11 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(775, 720);
+			this->ClientSize = System::Drawing::Size(782, 753);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label6);
 			this->Controls->Add(this->tableLayoutPanel2);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Controls->Add(this->label2);
@@ -304,6 +305,7 @@ namespace test {
 			this->Controls->Add(this->panel3);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"BakeryQueue";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"BakeryQueue";
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -345,6 +347,12 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	this->tableLayoutPanel2->Controls->Clear();
 	display_Malequeue();
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
 }
 };
 }

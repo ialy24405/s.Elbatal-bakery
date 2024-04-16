@@ -45,16 +45,19 @@ namespace test {
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::Label^ label6;
+
 	private: System::Windows::Forms::Label^ label7;
-	private: System::Windows::Forms::Label^ label8;
+
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button1;
+
 	protected:
 
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -70,9 +73,9 @@ namespace test {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// panel3
@@ -95,7 +98,8 @@ namespace test {
 			this->label1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(162, 292);
+			this->label1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->label1->Location = System::Drawing::Point(166, 308);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(163, 63);
 			this->label1->TabIndex = 32;
@@ -111,7 +115,7 @@ namespace test {
 			this->label2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(325, 292);
+			this->label2->Location = System::Drawing::Point(329, 308);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(227, 63);
 			this->label2->TabIndex = 33;
@@ -127,7 +131,7 @@ namespace test {
 			this->label3->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(162, 355);
+			this->label3->Location = System::Drawing::Point(166, 371);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(390, 63);
 			this->label3->TabIndex = 34;
@@ -143,7 +147,7 @@ namespace test {
 			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(162, 418);
+			this->label4->Location = System::Drawing::Point(166, 434);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(390, 63);
 			this->label4->TabIndex = 35;
@@ -159,29 +163,13 @@ namespace test {
 			this->label5->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(162, 481);
+			this->label5->Location = System::Drawing::Point(166, 497);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(390, 63);
 			this->label5->TabIndex = 36;
 			this->label5->Text = L"Bakery queue";
 			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->label5->Click += gcnew System::EventHandler(this, &Home::label5_Click);
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label6->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(235, 620);
-			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(69, 36);
-			this->label6->TabIndex = 41;
-			this->label6->Text = L"Exit";
-			this->label6->Click += gcnew System::EventHandler(this, &Home::label6_Click);
 			// 
 			// label7
 			// 
@@ -191,7 +179,7 @@ namespace test {
 			this->label7->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(162, 544);
+			this->label7->Location = System::Drawing::Point(166, 560);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(390, 63);
 			this->label7->TabIndex = 42;
@@ -199,21 +187,35 @@ namespace test {
 			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->label7->Click += gcnew System::EventHandler(this, &Home::label7_Click);
 			// 
-			// label8
+			// button4
 			// 
-			this->label8->AutoSize = true;
-			this->label8->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label8->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(362, 620);
-			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(113, 36);
-			this->label8->TabIndex = 43;
-			this->label8->Text = L"log out";
-			this->label8->Click += gcnew System::EventHandler(this, &Home::label8_Click);
+			this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
+			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button4->Location = System::Drawing::Point(180, 646);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(149, 45);
+			this->button4->TabIndex = 48;
+			this->button4->Text = L"Exit";
+			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &Home::button4_Click_1);
+			// 
+			// button1
+			// 
+			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
+			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button1->Location = System::Drawing::Point(366, 646);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(149, 45);
+			this->button1->TabIndex = 49;
+			this->button1->Text = L"Log Out";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &Home::button1_Click);
 			// 
 			// Home
 			// 
@@ -223,10 +225,10 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(775, 720);
-			this->Controls->Add(this->label8);
+			this->ClientSize = System::Drawing::Size(782, 753);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->button4);
 			this->Controls->Add(this->label7);
-			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
@@ -235,9 +237,9 @@ namespace test {
 			this->Controls->Add(this->panel3);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Home";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Home";
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
@@ -247,43 +249,51 @@ namespace test {
 		paymentLine.ShowDialog();
 		this->Show();
 	}
-private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Hide();
-	BakeryQueue bakeryQueue;
-	bakeryQueue.ShowDialog();
-	this->Show();
-}
-private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Hide();
+		BakeryQueue bakeryQueue;
+		bakeryQueue.ShowDialog();
+		this->Show();
+	}
+	private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
 
+		Application::Exit();
+	}
+	private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
+		BuyWithoutcard buyWithoutCard;
+		this->Hide();
+		buyWithoutCard.ShowDialog();
+		this->Show();
+	}
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+		AddCard addCard;
+		this->Hide();
+		addCard.ShowDialog();
+		this->Show();
+	}
+	private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+		BuyWithcard buyWithCard;
+		this->Hide();
+		buyWithCard.ShowDialog();
+		this->Show();
+	}
+	private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+	private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
+		TotalRevenue totalRevenue;
+		this->Hide();
+		totalRevenue.ShowDialog();
+		this->Show();
+
+	};
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void button4_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
-}
-private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
-	BuyWithoutcard buyWithoutCard;
-	this->Hide();
-	buyWithoutCard.ShowDialog();
-	this->Show();
-}
-private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-	AddCard addCard;
-	this->Hide();
-	addCard.ShowDialog();
-	this->Show();
-}
-private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
-	BuyWithcard buyWithCard;
-	this->Hide();
-	buyWithCard.ShowDialog();
-	this->Show();
-}
-private: System::Void label8_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
-}
-private: System::Void label7_Click(System::Object^ sender, System::EventArgs^ e) {
-	TotalRevenue totalRevenue;
-	this->Hide();
-	totalRevenue.ShowDialog();
-	this->Show();
-
 }
 };
 }
