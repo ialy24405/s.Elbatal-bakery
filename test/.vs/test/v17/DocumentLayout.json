@@ -3,80 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithcard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:BuyWithcard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Home.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:Home.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Login.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:Login.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithcard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:BuyWithcard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithoutcard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:BuyWithoutcard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\ViewCards.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:ViewCards.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PaymentLine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:PaymentLine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\DataControler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:DataControler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Register.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:Register.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:TotalRevenue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:TotalRevenue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithoutcard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:BuyWithoutcard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BakeryQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:BakeryQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Login.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:Login.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\AddCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:AddCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\AddCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:AddCard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PaymentLine.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:PaymentLine.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PriorityQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:PriorityQueue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:Queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Home.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A6109513-5412-486A-BCF5-1D753CE9C9FC}|test.vcxproj|solutionrelative:Home.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,239 +18,32 @@
       "DocumentGroups": [
         {
           "DockedHeight": 304,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BuyWithcard.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithcard.h",
-              "RelativeDocumentMoniker": "BuyWithcard.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithcard.h",
-              "RelativeToolTip": "BuyWithcard.h",
-              "ViewState": "AQIAAKQBAAAAAAAAAAAowLUBAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-17T13:34:40.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewCards.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\ViewCards.h",
-              "RelativeDocumentMoniker": "ViewCards.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\ViewCards.h",
-              "RelativeToolTip": "ViewCards.h",
-              "ViewState": "AQIAACIAAAAAAAAAAAAmwDYAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T16:41:16.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PaymentLine.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PaymentLine.h",
-              "RelativeDocumentMoniker": "PaymentLine.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PaymentLine.h",
-              "RelativeToolTip": "PaymentLine.h",
-              "ViewState": "AQIAACsBAAAAAAAAAAAowDoBAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T14:52:12.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DataControler.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\DataControler.h",
-              "RelativeDocumentMoniker": "DataControler.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\DataControler.h",
-              "RelativeToolTip": "DataControler.h",
-              "ViewState": "AQIAACcBAAAAAAAAAAAAACUAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-09T21:57:51.619Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Register.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Register.h",
-              "RelativeDocumentMoniker": "Register.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Register.h",
-              "RelativeToolTip": "Register.h",
-              "ViewState": "AQIAAHkBAAAAAAAAAAAqwIgBAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T14:42:12.389Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Login.h",
-              "RelativeDocumentMoniker": "Login.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Login.h",
-              "RelativeToolTip": "Login.h",
-              "ViewState": "AQIAAIMBAAAAAAAAAAAWwJUBAAAXAAAA",
+              "Title": "Home.h",
+              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Home.h",
+              "RelativeDocumentMoniker": "Home.h",
+              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Home.h",
+              "RelativeToolTip": "Home.h",
+              "ViewState": "AQIAANMBAAAAAAAAAAASwOYBAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T15:12:13.813Z",
+              "WhenOpened": "2024-04-17T17:48:39.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BuyWithcard.h [Design]",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithcard.h",
-              "RelativeDocumentMoniker": "BuyWithcard.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithcard.h [Design]",
-              "RelativeToolTip": "BuyWithcard.h [Design]",
+              "DocumentIndex": 0,
+              "Title": "Home.h [Design]",
+              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Home.h",
+              "RelativeDocumentMoniker": "Home.h",
+              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Home.h [Design]",
+              "RelativeToolTip": "Home.h [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T14:52:30.331Z",
+              "WhenOpened": "2024-04-17T17:41:52.439Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BuyWithoutcard.h [Design]",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithoutcard.h",
-              "RelativeDocumentMoniker": "BuyWithoutcard.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithoutcard.h [Design]",
-              "RelativeToolTip": "BuyWithoutcard.h [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T15:01:23.51Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TotalRevenue.h [Design]",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h",
-              "RelativeDocumentMoniker": "TotalRevenue.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h [Design]",
-              "RelativeToolTip": "TotalRevenue.h [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-13T15:35:55.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TotalRevenue.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h",
-              "RelativeDocumentMoniker": "TotalRevenue.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\TotalRevenue.h",
-              "RelativeToolTip": "TotalRevenue.h",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAqwOsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-13T15:47:16.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BuyWithoutcard.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithoutcard.h",
-              "RelativeDocumentMoniker": "BuyWithoutcard.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BuyWithoutcard.h",
-              "RelativeToolTip": "BuyWithoutcard.h",
-              "ViewState": "AQIAAHgBAAAAAAAAAAAqwIcBAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T16:00:53.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BakeryQueue.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BakeryQueue.h",
-              "RelativeDocumentMoniker": "BakeryQueue.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\BakeryQueue.h",
-              "RelativeToolTip": "BakeryQueue.h",
-              "ViewState": "AQIAAFIBAAAAAAAAAAAqwGIBAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T16:50:30.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Login.cpp",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Login.cpp",
-              "RelativeDocumentMoniker": "Login.cpp",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Login.cpp",
-              "RelativeToolTip": "Login.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-16T16:45:39.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddCard.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\AddCard.h",
-              "RelativeDocumentMoniker": "AddCard.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\AddCard.h",
-              "RelativeToolTip": "AddCard.h",
-              "ViewState": "AQIAAGwBAAAAAAAAAAAqwHsBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T15:00:29.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AddCard.h [Design]",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\AddCard.h",
-              "RelativeDocumentMoniker": "AddCard.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\AddCard.h [Design]",
-              "RelativeToolTip": "AddCard.h [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T14:55:51.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PaymentLine.resx",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PaymentLine.resx",
-              "RelativeDocumentMoniker": "PaymentLine.resx",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PaymentLine.resx",
-              "RelativeToolTip": "PaymentLine.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-04-16T16:09:32.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Admin.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Admin.h",
-              "RelativeDocumentMoniker": "Admin.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Admin.h",
-              "RelativeToolTip": "Admin.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T16:02:31.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PriorityQueue.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PriorityQueue.h",
-              "RelativeDocumentMoniker": "PriorityQueue.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\PriorityQueue.h",
-              "RelativeToolTip": "PriorityQueue.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T14:47:09.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Queue.h",
-              "DocumentMoniker": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Queue.h",
-              "RelativeDocumentMoniker": "Queue.h",
-              "ToolTip": "C:\\Users\\Aly\\Documents\\GitHub\\s.Elbatal-bakery\\test\\Queue.h",
-              "RelativeToolTip": "Queue.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T14:39:48.154Z"
             }
           ]
         }

@@ -40,16 +40,30 @@ namespace test {
 			}
 		}
 	private: System::Windows::Forms::Panel^ panel3;
-	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Label^ label4;
-	private: System::Windows::Forms::Label^ label5;
 
-	private: System::Windows::Forms::Label^ label7;
+
+
+
+
+
+
 
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button1;
+
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::Button^ button8;
+
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::Button^ button9;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::PictureBox^ pictureBox4;
+	private: System::Windows::Forms::PictureBox^ pictureBox5;
+	private: System::Windows::Forms::PictureBox^ pictureBox6;
 
 	protected:
 
@@ -68,14 +82,26 @@ namespace test {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Home::typeid));
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
+			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox5 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// panel3
@@ -84,108 +110,11 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->panel3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel3.BackgroundImage")));
 			this->panel3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->panel3->Location = System::Drawing::Point(241, 72);
+			this->panel3->Location = System::Drawing::Point(782, 111);
 			this->panel3->Margin = System::Windows::Forms::Padding(4);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(234, 203);
 			this->panel3->TabIndex = 31;
-			// 
-			// label1
-			// 
-			this->label1->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->label1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->label1->Location = System::Drawing::Point(166, 308);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(163, 63);
-			this->label1->TabIndex = 32;
-			this->label1->Text = L"Add Card";
-			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->label1->Click += gcnew System::EventHandler(this, &Home::label1_Click);
-			// 
-			// label2
-			// 
-			this->label2->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->label2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(329, 308);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(227, 63);
-			this->label2->TabIndex = 33;
-			this->label2->Text = L"Payment Line";
-			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->label2->Click += gcnew System::EventHandler(this, &Home::label2_Click);
-			// 
-			// label3
-			// 
-			this->label3->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->label3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label3->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(166, 371);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(390, 63);
-			this->label3->TabIndex = 34;
-			this->label3->Text = L"buy bread with card";
-			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->label3->Click += gcnew System::EventHandler(this, &Home::label3_Click);
-			// 
-			// label4
-			// 
-			this->label4->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->label4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(166, 434);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(390, 63);
-			this->label4->TabIndex = 35;
-			this->label4->Text = L"buy bread without card";
-			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->label4->Click += gcnew System::EventHandler(this, &Home::label4_Click);
-			// 
-			// label5
-			// 
-			this->label5->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->label5->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label5->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(166, 497);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(390, 63);
-			this->label5->TabIndex = 36;
-			this->label5->Text = L"Bakery queue";
-			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->label5->Click += gcnew System::EventHandler(this, &Home::label5_Click);
-			// 
-			// label7
-			// 
-			this->label7->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->label7->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label7->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(166, 560);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(390, 63);
-			this->label7->TabIndex = 42;
-			this->label7->Text = L"Total Bakery revenue";
-			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->label7->Click += gcnew System::EventHandler(this, &Home::label7_Click);
 			// 
 			// button4
 			// 
@@ -194,7 +123,7 @@ namespace test {
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button4->Location = System::Drawing::Point(180, 646);
+			this->button4->Location = System::Drawing::Point(532, 887);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(149, 45);
 			this->button4->TabIndex = 48;
@@ -209,13 +138,199 @@ namespace test {
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button1->Location = System::Drawing::Point(366, 646);
+			this->button1->Location = System::Drawing::Point(1069, 887);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(149, 45);
 			this->button1->TabIndex = 49;
 			this->button1->Text = L"Log Out";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &Home::button1_Click);
+			// 
+			// button3
+			// 
+			this->button3->BackColor = System::Drawing::Color::Black;
+			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button3->FlatAppearance->BorderSize = 0;
+			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button3->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button3->Location = System::Drawing::Point(367, 583);
+			this->button3->Margin = System::Windows::Forms::Padding(1);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(514, 61);
+			this->button3->TabIndex = 51;
+			this->button3->Text = L"Buy Bread With Card";
+			this->button3->UseVisualStyleBackColor = false;
+			this->button3->Click += gcnew System::EventHandler(this, &Home::button3_Click);
+			// 
+			// button5
+			// 
+			this->button5->BackColor = System::Drawing::Color::Black;
+			this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button5->FlatAppearance->BorderSize = 0;
+			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button5->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button5->Location = System::Drawing::Point(367, 738);
+			this->button5->Margin = System::Windows::Forms::Padding(1);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(514, 61);
+			this->button5->TabIndex = 52;
+			this->button5->Text = L"Buy Bread Without Card";
+			this->button5->UseVisualStyleBackColor = false;
+			this->button5->Click += gcnew System::EventHandler(this, &Home::button5_Click);
+			// 
+			// button6
+			// 
+			this->button6->BackColor = System::Drawing::Color::Black;
+			this->button6->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button6->FlatAppearance->BorderSize = 0;
+			this->button6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button6->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button6->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button6->Location = System::Drawing::Point(898, 583);
+			this->button6->Margin = System::Windows::Forms::Padding(1);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(514, 61);
+			this->button6->TabIndex = 53;
+			this->button6->Text = L"Bakery Queue";
+			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &Home::button6_Click);
+			// 
+			// button7
+			// 
+			this->button7->BackColor = System::Drawing::Color::Black;
+			this->button7->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button7->FlatAppearance->BorderSize = 0;
+			this->button7->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button7->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button7->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button7->Location = System::Drawing::Point(898, 738);
+			this->button7->Margin = System::Windows::Forms::Padding(1);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(514, 61);
+			this->button7->TabIndex = 54;
+			this->button7->Text = L"Total Bakery Revenue";
+			this->button7->UseVisualStyleBackColor = false;
+			this->button7->Click += gcnew System::EventHandler(this, &Home::button7_Click);
+			// 
+			// button8
+			// 
+			this->button8->BackColor = System::Drawing::Color::Black;
+			this->button8->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button8->FlatAppearance->BorderSize = 0;
+			this->button8->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button8->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button8->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button8->Location = System::Drawing::Point(898, 435);
+			this->button8->Margin = System::Windows::Forms::Padding(1);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(514, 61);
+			this->button8->TabIndex = 55;
+			this->button8->Text = L"Payment Line";
+			this->button8->UseVisualStyleBackColor = false;
+			this->button8->Click += gcnew System::EventHandler(this, &Home::button8_Click);
+			// 
+			// pictureBox2
+			// 
+			this->pictureBox2->BackColor = System::Drawing::Color::Black;
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(373, 442);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(83, 49);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox2->TabIndex = 58;
+			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &Home::pictureBox2_Click);
+			// 
+			// button9
+			// 
+			this->button9->BackColor = System::Drawing::Color::Black;
+			this->button9->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button9->FlatAppearance->BorderSize = 0;
+			this->button9->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button9->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button9->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button9->Location = System::Drawing::Point(367, 435);
+			this->button9->Margin = System::Windows::Forms::Padding(1);
+			this->button9->Name = L"button9";
+			this->button9->Size = System::Drawing::Size(514, 61);
+			this->button9->TabIndex = 57;
+			this->button9->Text = L"Add Card";
+			this->button9->UseVisualStyleBackColor = false;
+			this->button9->Click += gcnew System::EventHandler(this, &Home::button9_Click);
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackColor = System::Drawing::Color::Black;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(373, 590);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(83, 49);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox1->TabIndex = 59;
+			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &Home::pictureBox1_Click);
+			// 
+			// pictureBox3
+			// 
+			this->pictureBox3->BackColor = System::Drawing::Color::Black;
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(372, 745);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(83, 49);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox3->TabIndex = 60;
+			this->pictureBox3->TabStop = false;
+			this->pictureBox3->Click += gcnew System::EventHandler(this, &Home::pictureBox3_Click);
+			// 
+			// pictureBox4
+			// 
+			this->pictureBox4->BackColor = System::Drawing::Color::Black;
+			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
+			this->pictureBox4->Location = System::Drawing::Point(905, 441);
+			this->pictureBox4->Name = L"pictureBox4";
+			this->pictureBox4->Size = System::Drawing::Size(83, 49);
+			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox4->TabIndex = 61;
+			this->pictureBox4->TabStop = false;
+			this->pictureBox4->Click += gcnew System::EventHandler(this, &Home::pictureBox4_Click);
+			// 
+			// pictureBox5
+			// 
+			this->pictureBox5->BackColor = System::Drawing::Color::Black;
+			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
+			this->pictureBox5->Location = System::Drawing::Point(901, 744);
+			this->pictureBox5->Name = L"pictureBox5";
+			this->pictureBox5->Size = System::Drawing::Size(83, 49);
+			this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox5->TabIndex = 62;
+			this->pictureBox5->TabStop = false;
+			this->pictureBox5->Click += gcnew System::EventHandler(this, &Home::pictureBox5_Click);
+			// 
+			// pictureBox6
+			// 
+			this->pictureBox6->BackColor = System::Drawing::Color::Black;
+			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
+			this->pictureBox6->Location = System::Drawing::Point(898, 583);
+			this->pictureBox6->Name = L"pictureBox6";
+			this->pictureBox6->Size = System::Drawing::Size(90, 54);
+			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+			this->pictureBox6->TabIndex = 63;
+			this->pictureBox6->TabStop = false;
+			this->pictureBox6->Click += gcnew System::EventHandler(this, &Home::pictureBox6_Click);
 			// 
 			// Home
 			// 
@@ -225,20 +340,34 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(782, 753);
+			this->ClientSize = System::Drawing::Size(1902, 1033);
+			this->Controls->Add(this->pictureBox6);
+			this->Controls->Add(this->pictureBox5);
+			this->Controls->Add(this->pictureBox4);
+			this->Controls->Add(this->pictureBox3);
+			this->Controls->Add(this->pictureBox1);
+			this->Controls->Add(this->pictureBox2);
+			this->Controls->Add(this->button9);
+			this->Controls->Add(this->button8);
+			this->Controls->Add(this->button7);
+			this->Controls->Add(this->button6);
+			this->Controls->Add(this->button5);
+			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->button4);
-			this->Controls->Add(this->label7);
-			this->Controls->Add(this->label5);
-			this->Controls->Add(this->label4);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
-			this->Controls->Add(this->label1);
 			this->Controls->Add(this->panel3);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"Home";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Home";
+			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
+			this->Load += gcnew System::EventHandler(this, &Home::Home_Load);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -294,6 +423,68 @@ private: System::Void button4_Click_1(System::Object^ sender, System::EventArgs^
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void Home_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	AddCard addCard;
+	this->Hide();
+	addCard.ShowDialog();
+	this->Show();
+}
+private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
+	PaymentLine paymentLine;
+	this->Hide();
+	paymentLine.ShowDialog();
+	this->Show();
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	BuyWithcard buyWithCard;
+	this->Hide();
+	buyWithCard.ShowDialog();
+	this->Show();
+}
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	BuyWithoutcard buyWithoutCard;
+	this->Hide();
+	buyWithoutCard.ShowDialog();
+	this->Show();
+}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+		BakeryQueue bakeryQueue;
+	this->Hide();
+	bakeryQueue.ShowDialog();
+	this->Show();
+}
+private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+	TotalRevenue totalRevenue;
+	this->Hide();
+	totalRevenue.ShowDialog();
+	this->Show();
+}
+private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
+	AddCard addCard;
+	this->Hide();
+	addCard.ShowDialog();
+	this->Show();
+}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+	button9->PerformClick();
+}
+private: System::Void pictureBox4_Click(System::Object^ sender, System::EventArgs^ e) {
+	button8->PerformClick();
+}
+private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+	button3->PerformClick();
+}
+private: System::Void pictureBox6_Click(System::Object^ sender, System::EventArgs^ e) {
+	button6->PerformClick();
+}
+private: System::Void pictureBox3_Click(System::Object^ sender, System::EventArgs^ e) {
+	button5->PerformClick();
+}
+private: System::Void pictureBox5_Click(System::Object^ sender, System::EventArgs^ e) {
+	button7->PerformClick();
 }
 };
 }
