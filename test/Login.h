@@ -27,6 +27,7 @@ namespace test {
 			//TODO: Add the constructor code here
 			//
 			adminsList = DataManager::GetAdminsList();
+			DataManager::AddAdmin("a", "a");
 		}
 
 	protected:

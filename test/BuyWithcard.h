@@ -220,6 +220,7 @@ namespace test {
 			this->textBox1->Size = System::Drawing::Size(101, 41);
 			this->textBox1->TabIndex = 53;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &BuyWithcard::textBox1_TextChanged);
+			this->textBox1->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &BuyWithcard::textBox1_KeyDown);
 			// 
 			// pictureBox2
 			// 
@@ -272,6 +273,7 @@ namespace test {
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(101, 41);
 			this->textBox2->TabIndex = 68;
+			this->textBox2->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &BuyWithcard::textBox2_KeyDown);
 			// 
 			// button4
 			// 
@@ -374,7 +376,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 				if (DataManager::GetRemainBread(cardid)>=bread && DataManager::GetFamilySize(cardid)*5>=bread) {
 					float price = bread * 0.05;
 					int age = DataManager::getCustomerAge(id);	
-					DialogResult = MessageBox::Show("You should Pay: " + price + "\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
+					DialogResult = MessageBox::Show("You should Pay: " + price + "L.E\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
 					if (DialogResult == System::Windows::Forms::DialogResult::OK)
 					{
 						DataManager::setBreadCard(bread);
@@ -392,7 +394,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 						else {
 							DataManager::AddToBakeryFemaleQueue(information);
 						}
-						MessageBox::Show("You have successfully bought " + bread + " breads your id : "+id);
+						MessageBox::Show("You have successfully bought " + bread);
 						DataManager::RemoveFromPayingQueue();
 
 					}
@@ -421,9 +423,20 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void textBox1_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+	if (e->KeyCode == Keys::Enter) {
+		textBox2->Focus();
+	}
+}
+private: System::Void textBox2_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+	if (e->KeyCode == Keys::Enter) {
+		button1->PerformClick();
+	}
 }
 };
 }

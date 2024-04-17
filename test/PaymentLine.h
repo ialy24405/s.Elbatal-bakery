@@ -98,7 +98,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(201, 299);
+			this->label1->Location = System::Drawing::Point(201, 392);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(137, 35);
 			this->label1->TabIndex = 33;
@@ -112,7 +112,7 @@ namespace test {
 			this->radioButton1->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->radioButton1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton1->Location = System::Drawing::Point(253, 337);
+			this->radioButton1->Location = System::Drawing::Point(253, 430);
 			this->radioButton1->Name = L"radioButton1";
 			this->radioButton1->Size = System::Drawing::Size(96, 34);
 			this->radioButton1->TabIndex = 34;
@@ -128,7 +128,7 @@ namespace test {
 			this->radioButton2->FlatStyle = System::Windows::Forms::FlatStyle::System;
 			this->radioButton2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton2->Location = System::Drawing::Point(253, 364);
+			this->radioButton2->Location = System::Drawing::Point(253, 457);
 			this->radioButton2->Name = L"radioButton2";
 			this->radioButton2->Size = System::Drawing::Size(125, 34);
 			this->radioButton2->TabIndex = 35;
@@ -142,11 +142,12 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(201, 397);
+			this->label2->Location = System::Drawing::Point(201, 296);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(137, 35);
 			this->label2->TabIndex = 36;
 			this->label2->Text = L"Age :";
+			this->label2->Click += gcnew System::EventHandler(this, &PaymentLine::label2_Click);
 			// 
 			// textBox1
 			// 
@@ -155,7 +156,7 @@ namespace test {
 			this->textBox1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(290, 436);
+			this->textBox1->Location = System::Drawing::Point(290, 335);
 			this->textBox1->Margin = System::Windows::Forms::Padding(4);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(101, 34);
@@ -169,19 +170,20 @@ namespace test {
 			this->pictureBox2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(252, 441);
+			this->pictureBox2->Location = System::Drawing::Point(252, 340);
 			this->pictureBox2->Margin = System::Windows::Forms::Padding(4);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(30, 31);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox2->TabIndex = 38;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &PaymentLine::pictureBox2_Click);
 			// 
 			// panel1
 			// 
 			this->panel1->BackColor = System::Drawing::Color::Black;
 			this->panel1->ImeMode = System::Windows::Forms::ImeMode::On;
-			this->panel1->Location = System::Drawing::Point(290, 473);
+			this->panel1->Location = System::Drawing::Point(290, 372);
 			this->panel1->Margin = System::Windows::Forms::Padding(4);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(92, 1);
@@ -213,7 +215,7 @@ namespace test {
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button4->Location = System::Drawing::Point(200, 577);
+			this->button4->Location = System::Drawing::Point(207, 577);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(149, 45);
 			this->button4->TabIndex = 49;
@@ -228,7 +230,7 @@ namespace test {
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button2->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button2->Location = System::Drawing::Point(375, 577);
+			this->button2->Location = System::Drawing::Point(387, 577);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(149, 45);
 			this->button2->TabIndex = 50;
@@ -309,6 +311,10 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
