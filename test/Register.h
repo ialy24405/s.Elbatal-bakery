@@ -362,24 +362,33 @@ namespace test {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ username = textUsername->Text;
 		String^ password = textPassword->Text;
+
 		if (username == "" || password == "") {
 			MessageBox::Show("Please fill in all fields", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
+
+		// Check if username contains a number or non-alphabetic symbol (excluding spaces)
+		for each (char c in username)
+		{
+			if (!System::Char::IsLetter(c) && c != ' ') {
+				MessageBox::Show("A username should not contain numbers or symbols");
+				return;
+			}
+		}
+
+		if (!DataManager::CheckAdmin(username, password)) {
+			DataManager::AddAdmin(username, password);
+			MessageBox::Show("Account created successfully", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+			textUsername->Clear();
+			textPassword->Clear();
+			textUsername->Focus();
 		}
 		else {
-
-			if (!DataManager::CheckAdmin(username, password)) {
-				DataManager::AddAdmin(username, password);
-				MessageBox::Show("Account created successfully", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
-				textUsername->Clear();
-				textPassword->Clear();
-				textUsername->Focus();
-			}
-			else {
-				MessageBox::Show("Username already exists", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				textUsername->Clear();
-				textPassword->Clear();
-				textUsername->Focus();
-			}
+			MessageBox::Show("Username already exists", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			textUsername->Clear();
+			textPassword->Clear();
+			textUsername->Focus();
 		}
 	}
 	private: System::Void pictureBox4_Click(System::Object^ sender, System::EventArgs^ e) {
