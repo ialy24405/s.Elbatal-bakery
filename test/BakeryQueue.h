@@ -136,7 +136,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->panel3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel3.BackgroundImage")));
 			this->panel3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->panel3->Location = System::Drawing::Point(255, 53);
+			this->panel3->Location = System::Drawing::Point(302, 105);
 			this->panel3->Margin = System::Windows::Forms::Padding(4);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(234, 203);
@@ -146,7 +146,7 @@ namespace test {
 			// 
 			this->panel2->BackColor = System::Drawing::Color::Black;
 			this->panel2->ImeMode = System::Windows::Forms::ImeMode::On;
-			this->panel2->Location = System::Drawing::Point(369, 264);
+			this->panel2->Location = System::Drawing::Point(906, 360);
 			this->panel2->Margin = System::Windows::Forms::Padding(4);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(10, 408);
@@ -158,7 +158,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(398, 264);
+			this->label1->Location = System::Drawing::Point(935, 360);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(197, 29);
 			this->label1->TabIndex = 34;
@@ -172,7 +172,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(165, 264);
+			this->label2->Location = System::Drawing::Point(702, 360);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(197, 29);
 			this->label2->TabIndex = 35;
@@ -188,7 +188,7 @@ namespace test {
 				100)));
 			this->tableLayoutPanel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->tableLayoutPanel1->Location = System::Drawing::Point(147, 293);
+			this->tableLayoutPanel1->Location = System::Drawing::Point(684, 389);
 			this->tableLayoutPanel1->Margin = System::Windows::Forms::Padding(0);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
@@ -207,7 +207,7 @@ namespace test {
 				100)));
 			this->tableLayoutPanel2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->tableLayoutPanel2->Location = System::Drawing::Point(403, 293);
+			this->tableLayoutPanel2->Location = System::Drawing::Point(940, 389);
 			this->tableLayoutPanel2->Margin = System::Windows::Forms::Padding(0);
 			this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
 			this->tableLayoutPanel2->RowCount = 1;
@@ -226,7 +226,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button1->Location = System::Drawing::Point(147, 606);
+			this->button1->Location = System::Drawing::Point(684, 702);
 			this->button1->Margin = System::Windows::Forms::Padding(1);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(197, 55);
@@ -245,7 +245,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button2->Location = System::Drawing::Point(403, 606);
+			this->button2->Location = System::Drawing::Point(940, 702);
 			this->button2->Margin = System::Windows::Forms::Padding(1);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(197, 55);
@@ -258,10 +258,11 @@ namespace test {
 			// 
 			this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button4->Location = System::Drawing::Point(99, 147);
+			this->button4->Location = System::Drawing::Point(1029, 187);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(149, 45);
 			this->button4->TabIndex = 54;
@@ -273,10 +274,11 @@ namespace test {
 			// 
 			this->button3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button3->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button3->Location = System::Drawing::Point(496, 147);
+			this->button3->Location = System::Drawing::Point(651, 187);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(149, 45);
 			this->button3->TabIndex = 55;
@@ -292,7 +294,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(782, 753);
+			this->ClientSize = System::Drawing::Size(1902, 1033);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button2);
@@ -307,6 +309,7 @@ namespace test {
 			this->Name = L"BakeryQueue";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"BakeryQueue";
+			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
