@@ -333,31 +333,39 @@ namespace test {
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 
-		String ^ name = textUsername->Text;
-		String ^ numStr = textBox1->Text;
-		int num;
-		if (numStr == "" || name == "")
+	String^ name = textUsername->Text;
+	String^ numStr = textBox1->Text;
+	int num;
+
+	if (numStr == "" || name == "")
+	{
+		MessageBox::Show("Please fill all fields");
+		return;
+	}
+	else {
+		// Check if name contains a number or non-alphabetic symbol (excluding spaces)
+		for each (char c in name)
 		{
-			MessageBox::Show("Please fill all fields");
-			textUsername->Clear();
-			textBox1->Clear();
-			return;
+			if (!System::Char::IsLetter(c) && c != ' ') {
+				MessageBox::Show("A name should not contain numbers or symbols");
+				return;
+			}
+		}
+
+		if (Int32::TryParse(numStr, num)) {
+			int id = DataManager::addnewCard(name, num);
+			MessageBox::Show("Card added successfully \nyour monthly bread numbers : " + num * 150 + "\nyour Id : " + id, "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
 		}
 		else {
-			if (Int32::TryParse(numStr, num)) {
-
-				int id = DataManager::addnewCard(name, num);
-				MessageBox::Show("Card added successfully \nyour montly bread numbers : "+num*150+"\nyour Id : "+id, "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
-
-			}
-			else {
-				MessageBox::Show("Please enter a valid number");
-
-			}
-				textUsername->Text = "";
-				textBox1->Text = "";
+			MessageBox::Show("Please enter a valid number");
 		}
+		textUsername->Text = "";
+		textBox1->Text = "";
+	}
+
+
 }
+
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 
