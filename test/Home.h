@@ -110,7 +110,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->panel3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel3.BackgroundImage")));
 			this->panel3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->panel3->Location = System::Drawing::Point(782, 111);
+			this->panel3->Location = System::Drawing::Point(881, 110);
 			this->panel3->Margin = System::Windows::Forms::Padding(4);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(234, 203);
@@ -123,7 +123,7 @@ namespace test {
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button4->Location = System::Drawing::Point(532, 887);
+			this->button4->Location = System::Drawing::Point(629, 833);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(149, 45);
 			this->button4->TabIndex = 48;
@@ -138,7 +138,7 @@ namespace test {
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button1->Location = System::Drawing::Point(1069, 887);
+			this->button1->Location = System::Drawing::Point(1166, 833);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(149, 45);
 			this->button1->TabIndex = 49;
@@ -156,7 +156,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button3->Location = System::Drawing::Point(367, 583);
+			this->button3->Location = System::Drawing::Point(464, 539);
 			this->button3->Margin = System::Windows::Forms::Padding(1);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(514, 61);
@@ -175,7 +175,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button5->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button5->Location = System::Drawing::Point(367, 738);
+			this->button5->Location = System::Drawing::Point(464, 694);
 			this->button5->Margin = System::Windows::Forms::Padding(1);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(514, 61);
@@ -194,7 +194,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button6->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button6->Location = System::Drawing::Point(898, 583);
+			this->button6->Location = System::Drawing::Point(995, 539);
 			this->button6->Margin = System::Windows::Forms::Padding(1);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(514, 61);
@@ -213,7 +213,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button7->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button7->Location = System::Drawing::Point(898, 738);
+			this->button7->Location = System::Drawing::Point(995, 694);
 			this->button7->Margin = System::Windows::Forms::Padding(1);
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(514, 61);
@@ -232,7 +232,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button8->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button8->Location = System::Drawing::Point(898, 435);
+			this->button8->Location = System::Drawing::Point(995, 391);
 			this->button8->Margin = System::Windows::Forms::Padding(1);
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(514, 61);
@@ -245,7 +245,7 @@ namespace test {
 			// 
 			this->pictureBox2->BackColor = System::Drawing::Color::Black;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(373, 442);
+			this->pictureBox2->Location = System::Drawing::Point(470, 398);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(83, 49);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -263,7 +263,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button9->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button9->Location = System::Drawing::Point(367, 435);
+			this->button9->Location = System::Drawing::Point(464, 391);
 			this->button9->Margin = System::Windows::Forms::Padding(1);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(514, 61);
@@ -276,7 +276,7 @@ namespace test {
 			// 
 			this->pictureBox1->BackColor = System::Drawing::Color::Black;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(373, 590);
+			this->pictureBox1->Location = System::Drawing::Point(470, 544);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(83, 49);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -288,7 +288,7 @@ namespace test {
 			// 
 			this->pictureBox3->BackColor = System::Drawing::Color::Black;
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(372, 745);
+			this->pictureBox3->Location = System::Drawing::Point(470, 700);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(83, 49);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -300,7 +300,7 @@ namespace test {
 			// 
 			this->pictureBox4->BackColor = System::Drawing::Color::Black;
 			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(905, 441);
+			this->pictureBox4->Location = System::Drawing::Point(1002, 397);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(83, 49);
 			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -312,7 +312,7 @@ namespace test {
 			// 
 			this->pictureBox5->BackColor = System::Drawing::Color::Black;
 			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
-			this->pictureBox5->Location = System::Drawing::Point(901, 744);
+			this->pictureBox5->Location = System::Drawing::Point(998, 700);
 			this->pictureBox5->Name = L"pictureBox5";
 			this->pictureBox5->Size = System::Drawing::Size(83, 49);
 			this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -324,7 +324,7 @@ namespace test {
 			// 
 			this->pictureBox6->BackColor = System::Drawing::Color::Black;
 			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
-			this->pictureBox6->Location = System::Drawing::Point(898, 583);
+			this->pictureBox6->Location = System::Drawing::Point(995, 539);
 			this->pictureBox6->Name = L"pictureBox6";
 			this->pictureBox6->Size = System::Drawing::Size(90, 54);
 			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
