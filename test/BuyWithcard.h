@@ -396,72 +396,73 @@ private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e)
 	this->Close();
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (textUsername->Text == "" || textBox1->Text == "" || textBox2->Text == ""||(radioButton1->Checked==false&&radioButton2->Checked==false)) {
-		MessageBox::Show("Please fill all the fields", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-	}
-	else {
-		int id = Convert::ToInt32(textUsername->Text);
-		try {
+	try {
+		if (textUsername->Text == "" || textBox1->Text == "" || textBox2->Text == "" || (radioButton1->Checked == false && radioButton2->Checked == false)) {
+			MessageBox::Show("Please fill all the fields", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
+		else {
+			int id = Convert::ToInt32(textUsername->Text);
 			int front = DataManager::getFrontPayingQueue();
 			if (!DataManager::CheckCustomer(id) && (front != id)) {
-				MessageBox::Show("This ID is not exist");
+				MessageBox::Show("This ID does not exist");
 				return;
 			}
 			else {
-
 				int cardid = Convert::ToInt32(textBox1->Text);
-				if(DataManager::CheckCard(cardid) == false) {
-					MessageBox::Show("This card ID is not exist", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				if (DataManager::CheckCard(cardid) == false) {
+					MessageBox::Show("This card ID does not exist", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+					return;
 				}
 				else {
-				int bread = Convert::ToInt32(textBox2->Text);
-				if (DataManager::GetRemainBread(cardid)>=bread && DataManager::GetFamilySize(cardid)*5>=bread) {
-					float price = bread * 0.05;
-					int age = DataManager::getCustomerAge(id);	
-					DialogResult = MessageBox::Show("You should Pay: " + price + "L.E\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
-					if (DialogResult == System::Windows::Forms::DialogResult::OK)
-					{
-						DataManager::setBreadCard(bread);
-						DataManager::setMoneyCard(price);
-						DataManager::setTotalBread(bread);
-						DataManager::setTotalMoney(price);
-						DataManager::SetRemainBread(cardid, bread);
-						List<int>^ information = gcnew List<int>();
-						information->Add(id);
-						information->Add(bread);
-						information->Add(age);
-						if (radioButton1->Checked) {
-							DataManager::AddToBakeryMaleQueue(information);
+					int bread = Convert::ToInt32(textBox2->Text);
+					if (DataManager::GetRemainBread(cardid) >= bread && DataManager::GetFamilySize(cardid) * 5 >= bread) {
+						float price = bread * 0.05;
+						int age = DataManager::getCustomerAge(id);
+						DialogResult = MessageBox::Show("You should Pay: " + price + "L.E\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
+						if (DialogResult == System::Windows::Forms::DialogResult::OK)
+						{
+							DataManager::setBreadCard(bread);
+							DataManager::setMoneyCard(price);
+							DataManager::setTotalBread(bread);
+							DataManager::setTotalMoney(price);
+							DataManager::SetRemainBread(cardid, bread);
+							List<int>^ information = gcnew List<int>();
+							information->Add(id);
+							information->Add(bread);
+							information->Add(age);
+							if (radioButton1->Checked) {
+								DataManager::AddToBakeryMaleQueue(information);
+							}
+							else {
+								DataManager::AddToBakeryFemaleQueue(information);
+							}
+							MessageBox::Show("You have successfully bought " + bread);
+							DataManager::RemoveFromPayingQueue();
 						}
 						else {
-							DataManager::AddToBakeryFemaleQueue(information);
+							radioButton1->Checked = false;
+							radioButton2->Checked = false;
+							textUsername->Text = "";
+							textBox1->Text = "";
 						}
-						MessageBox::Show("You have successfully bought " + bread);
-						DataManager::RemoveFromPayingQueue();
-
 					}
 					else {
-						radioButton1->Checked = false;
-						radioButton2->Checked = false;
-						textUsername->Text = "";
-						textBox1->Text = "";
-
+						MessageBox::Show("Please enter a valid number of bread", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 					}
-
-				}
-				else {
-					MessageBox::Show("Please enter a valid number of bread", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-				}
-
 				}
 			}
 		}
-		catch (Exception^ ex) {
-			MessageBox::Show("Not your turn", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-		}
-
 	}
+	catch (System::FormatException^) {
+		MessageBox::Show("Invalid input. Please enter a number.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+	catch (Exception^ ex) {
+		MessageBox::Show("Not your turn", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	}
+
 }
+
 private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {

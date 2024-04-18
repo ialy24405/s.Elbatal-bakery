@@ -327,79 +327,59 @@ namespace test {
 		this->Close();
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	bool gender;
-	if (radioButton1->Checked)
-	{
-		gender = true;
-	}
-	else if (radioButton2->Checked)
-	{
-		gender = false;
-	}
-	else {
-		MessageBox::Show("Please choose your gender");
-		return;
-	}
-	String^ IDStr = textUsername->Text;
-	if (IDStr == "")
-	{
-		MessageBox::Show("Please enter your ID");
-		return;
-	}
-	int ID = Convert::ToInt32(IDStr);
-	try
-	{
-	int front = DataManager::getFrontPayingQueue();
-
-	if (!DataManager::CheckCustomer(ID)&&(front!=ID)) {
-		MessageBox::Show("This ID is not exist");
-		return;
-	}
-	else {
-		String^ breadStr = textBox1->Text;
-		if (breadStr == "")
-		{
-			MessageBox::Show("Please enter the number of breads");
-			return;
-		}
-		int bread = Convert::ToInt32(breadStr);
-		if (bread <= 0)
-		{
-			MessageBox::Show("Please enter a valid number of breads");
+	try {
+		if (textUsername->Text == "" || textBox1->Text == "" || (radioButton1->Checked == false && radioButton2->Checked == false)) {
+			MessageBox::Show("Please fill all the fields", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			return;
 		}
 		else {
-			int price = bread * 1;
-			int age = DataManager::getCustomerAge(ID);
-			DialogResult = MessageBox::Show("You should Pay: " + price + "\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
-			if (DialogResult == System::Windows::Forms::DialogResult::OK)
-			{
-				DataManager::setBreadNoCard(bread);
-				DataManager::setMoneyNoCard(price);
-				DataManager::setTotalBread(bread);
-				DataManager::setTotalMoney(price);
-				DataManager::SetCustomerBread(ID, bread);
-				List<int>^ information = gcnew List<int>();
-				information->Add(ID);
-				information->Add(bread);
-				information->Add(age);
-				if(gender)
-					DataManager::AddToBakeryMaleQueue(information);
-				else
-					DataManager::AddToBakeryFemaleQueue(information);
-				MessageBox::Show("You have successfully bought " + bread + " breads your id :"+ID);
-				DataManager::RemoveFromPayingQueue();
-
+			int id = Convert::ToInt32(textUsername->Text);
+			int front = DataManager::getFrontPayingQueue();
+			if (!DataManager::CheckCustomer(id) && (front != id)) {
+				MessageBox::Show("This ID is not exist");
+				return;
 			}
 			else {
-				radioButton1->Checked = false;
-				radioButton2->Checked = false;
-				textUsername->Text = "";
-				textBox1->Text = "";
-
+				int bread = Convert::ToInt32(textBox1->Text);
+				if (bread <= 0)
+				{
+					MessageBox::Show("Please enter a valid number of breads");
+					return;
+				}
+				else {
+					int price = bread * 1;
+					int age = DataManager::getCustomerAge(id);
+					DialogResult = MessageBox::Show("You should Pay: " + price + "\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
+					if (DialogResult == System::Windows::Forms::DialogResult::OK)
+					{
+						DataManager::setBreadNoCard(bread);
+						DataManager::setMoneyNoCard(price);
+						DataManager::setTotalBread(bread);
+						DataManager::setTotalMoney(price);
+						DataManager::SetCustomerBread(id, bread);
+						List<int>^ information = gcnew List<int>();
+						information->Add(id);
+						information->Add(bread);
+						information->Add(age);
+						if (radioButton1->Checked)
+							DataManager::AddToBakeryMaleQueue(information);
+						else
+							DataManager::AddToBakeryFemaleQueue(information);
+						MessageBox::Show("You have successfully bought " + bread + " breads your id :" + id);
+						DataManager::RemoveFromPayingQueue();
+					}
+					else {
+						radioButton1->Checked = false;
+						radioButton2->Checked = false;
+						textUsername->Text = "";
+						textBox1->Text = "";
+					}
+				}
 			}
 		}
 	}
+	catch (System::FormatException^) {
+		MessageBox::Show("Invalid input. Please enter a number.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 	}
 	catch (Exception^ e)
 	{
@@ -412,7 +392,9 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 
 
+
 }
+
 private: System::Void BuyWithoutcard_Load(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {

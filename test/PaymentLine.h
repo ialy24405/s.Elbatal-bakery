@@ -310,20 +310,22 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	else {
 		MessageBox::Show("Please select your gender");
+		return;
 	}
-	if (textBox1->Text == "Num"||textBox1->Text == "") {
-		MessageBox::Show("Please enter your age");
-	}
-	else {
+	try {
 		age = Convert::ToInt32(textBox1->Text);
 		int customerID = DataManager::AddCustomer(gender, age);
 		DataManager::AddToPayingQueue(customerID);
-		MessageBox::Show("Added successfully\nyour queue ID : "+customerID);
+		MessageBox::Show("Added successfully\nyour queue ID : " + customerID);
 		textBox1->Text = "";
 		radioButton1->Checked = false;
 		radioButton2->Checked = false;
-
 	}
+	catch (System::FormatException^) {
+		MessageBox::Show("Please enter a valid age");
+	}
+
+
 }
 private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
