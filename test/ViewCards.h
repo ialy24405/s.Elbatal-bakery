@@ -26,7 +26,7 @@ namespace test {
 		void display_queue()
 		{
 			// Create a TableLayoutPanel
-			tableLayoutPanel1->ColumnCount = 2;
+			tableLayoutPanel1->ColumnCount = 4;
 			tableLayoutPanel1->RowCount = 1;
 			//tableLayoutPanel1->Dock = DockStyle::Fill; // Dock to fill the form
 			
@@ -36,11 +36,11 @@ namespace test {
 			int size = DataManager::getSize() / 2;
 			if (DataManager::getSize() % 2 == 1)
 				size++;
-			int maxcol = 2;
+			int maxcol = 4;
 			for (int row = 0; row < size; row++)
 			{
 				if (row == size - 1 && DataManager::getSize() % 2 == 1)
-					maxcol = 1;
+					maxcol = DataManager::getSize() % 4;
 				for (int col = 0; col < maxcol&&i< DataManager::getSize(); col++)
 				{
 					// Create a button for each cell
@@ -49,6 +49,7 @@ namespace test {
 					button->Dock = DockStyle::Fill; // Dock buttons to fill the cell
 					button->TextAlign = ContentAlignment::MiddleLeft; // Center the text
 					button->AutoSize = true;
+					button->BorderStyle = BorderStyle::FixedSingle;
 					// Add button to the table layout
 					tableLayoutPanel1->Controls->Add(button, col, row);
 					i++;
@@ -109,19 +110,23 @@ namespace test {
 			this->tableLayoutPanel1->AutoSize = true;
 			this->tableLayoutPanel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->tableLayoutPanel1->ColumnCount = 2;
+			this->tableLayoutPanel1->ColumnCount = 4;
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				227)));
+				259)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				259)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				245)));
 			this->tableLayoutPanel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->tableLayoutPanel1->Location = System::Drawing::Point(155, 291);
+			this->tableLayoutPanel1->Location = System::Drawing::Point(342, 312);
 			this->tableLayoutPanel1->Margin = System::Windows::Forms::Padding(0);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle()));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(457, 86);
+			this->tableLayoutPanel1->Size = System::Drawing::Size(1006, 86);
 			this->tableLayoutPanel1->TabIndex = 0;
 			this->tableLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &ViewCards::tableLayoutPanel1_Paint);
 			// 
@@ -131,7 +136,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->panel3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel3.BackgroundImage")));
 			this->panel3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->panel3->Location = System::Drawing::Point(119, 72);
+			this->panel3->Location = System::Drawing::Point(546, 103);
 			this->panel3->Margin = System::Windows::Forms::Padding(4);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(207, 166);
@@ -143,7 +148,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(160, 252);
+			this->label1->Location = System::Drawing::Point(337, 271);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(197, 29);
 			this->label1->TabIndex = 33;
@@ -157,7 +162,7 @@ namespace test {
 			this->label2->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(398, 114);
+			this->label2->Location = System::Drawing::Point(998, 179);
 			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(85, 36);
@@ -172,7 +177,7 @@ namespace test {
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button4->Location = System::Drawing::Point(365, 153);
+			this->button4->Location = System::Drawing::Point(779, 174);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(149, 45);
 			this->button4->TabIndex = 48;
@@ -188,7 +193,7 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(192)));
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(782, 753);
+			this->ClientSize = System::Drawing::Size(1902, 1033);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
@@ -196,7 +201,9 @@ namespace test {
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"ViewCards";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"ViewCards";
+			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->Load += gcnew System::EventHandler(this, &ViewCards::ViewCards_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();

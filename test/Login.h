@@ -364,8 +364,13 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 			Home home;
 			this->Hide();
 			home.ShowDialog();
+			try {
 			this->Show(); 
 			return;
+
+			}catch (Exception^ e) {
+				
+			}
 		}
 	}
 	// Show a message box indicating invalid credentials

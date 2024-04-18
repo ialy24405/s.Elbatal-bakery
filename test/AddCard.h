@@ -339,6 +339,8 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		if (numStr == "" || name == "")
 		{
 			MessageBox::Show("Please fill all fields");
+			textUsername->Clear();
+			textBox1->Clear();
 			return;
 		}
 		else {
