@@ -79,8 +79,9 @@ namespace test {
 	private: System::Windows::Forms::Panel^ panel3;
 	private: System::Windows::Forms::Label^ label1;
 
-	private: System::Windows::Forms::Label^ label2;
+
 	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button1;
 
 	protected:
 
@@ -101,8 +102,8 @@ namespace test {
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// tableLayoutPanel1
@@ -154,36 +155,37 @@ namespace test {
 			this->label1->TabIndex = 33;
 			this->label1->Text = L"Available cards :";
 			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
-				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->label2->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(998, 179);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(85, 36);
-			this->label2->TabIndex = 43;
-			this->label2->Text = L"Back";
-			this->label2->Click += gcnew System::EventHandler(this, &ViewCards::label2_Click_1);
-			// 
 			// button4
 			// 
 			this->button4->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
 			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button4->Location = System::Drawing::Point(779, 174);
+			this->button4->Location = System::Drawing::Point(869, 173);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(149, 45);
 			this->button4->TabIndex = 48;
 			this->button4->Text = L"Exit";
 			this->button4->UseVisualStyleBackColor = false;
 			this->button4->Click += gcnew System::EventHandler(this, &ViewCards::button4_Click);
+			// 
+			// button1
+			// 
+			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
+				static_cast<System::Int32>(static_cast<System::Byte>(159)));
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 18, System::Drawing::FontStyle::Bold));
+			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button1->Location = System::Drawing::Point(1094, 173);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(149, 45);
+			this->button1->TabIndex = 49;
+			this->button1->Text = L"Back";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &ViewCards::button1_Click);
 			// 
 			// ViewCards
 			// 
@@ -194,8 +196,8 @@ namespace test {
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1902, 1033);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->button4);
-			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->tableLayoutPanel1);
@@ -224,6 +226,9 @@ private: System::Void tableLayoutPanel1_Paint(System::Object^ sender, System::Wi
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
 }
 };
 }
