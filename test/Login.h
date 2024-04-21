@@ -435,7 +435,13 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	Register registerForm;
 	this->Hide();
 	registerForm.ShowDialog();
+	try {
+
 	this->Show();
+
+	}catch (Exception^ e) {
+		
+	}
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();

@@ -298,6 +298,7 @@ namespace test {
 			this->button4->TabIndex = 69;
 			this->button4->Text = L"Exit";
 			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &BuyWithcard::button4_Click);
 			// 
 			// button2
 			// 
@@ -482,6 +483,9 @@ private: System::Void textBox2_KeyDown(System::Object^ sender, System::Windows::
 	}
 }
 private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
 }
 };
 }
