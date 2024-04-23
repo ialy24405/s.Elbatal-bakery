@@ -130,6 +130,8 @@ namespace test {
 			this->textUsername->Name = L"textUsername";
 			this->textUsername->Size = System::Drawing::Size(101, 41);
 			this->textUsername->TabIndex = 61;
+			this->textUsername->TextChanged += gcnew System::EventHandler(this, &BuyWithoutcard::textUsername_TextChanged);
+			this->textUsername->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &BuyWithoutcard::textUsername_KeyDown);
 			// 
 			// pictureBox1
 			// 
@@ -402,6 +404,14 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void textUsername_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+
+}
+private: System::Void textUsername_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e) {
+	if (e->KeyCode == Keys::Enter) {
+		textBox1->Focus();
+	}
 }
 };
 }

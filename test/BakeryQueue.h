@@ -27,25 +27,35 @@ namespace test {
 		void display_Malequeue()
 		{
 			// Create a TableLayoutPanel
-			tableLayoutPanel2->ColumnCount = 1;
+			tableLayoutPanel2->ColumnCount = 5;
 			tableLayoutPanel2->RowCount = 1;
 			//tableLayoutPanel1->Dock = DockStyle::Fill; // Dock to fill the form
 
 			// Add some controls to the table layout
 			PriorityQueue<List<int>^>^ bakeryMaleQueue = DataManager::GetBakeryMaleQueue();
-			for (int row = 0; row < bakeryMaleQueue->Count(); row++)
+			int i = 0;
+			int size = bakeryMaleQueue->Count() / 2;
+			if (bakeryMaleQueue->Count() % 2 == 1)
+				size++;
+			int maxcol = 5;
+			for (int row = 0; row < size; row++)
 			{
-
-				for (int col = 0; col < 1; col++)
+				if (row == size - 1 && bakeryMaleQueue->Count() % 2 == 1)
+					maxcol = bakeryMaleQueue->Count() % 2;
+				for (int col = 0; col < maxcol && i < bakeryMaleQueue->Count(); col++)
 				{
 					Label^ label = gcnew Label();
 					// Assuming the first element of cardData is ID, the second is Monthly Bread, and the third is Family Size
-					label->Text = "ID: " + bakeryMaleQueue->arr[row][0] + "\nNo. of Bread: " + bakeryMaleQueue->arr[row][1] + "\nAge: " + bakeryMaleQueue->arr[row][2];
+					label->Text = "ID: " + bakeryMaleQueue->arr[i][0] + "\nNo. of Bread: " + bakeryMaleQueue->arr[i][1] + "\nAge: " + bakeryMaleQueue->arr[i][2];
 					label->Dock = DockStyle::Fill; // Dock labels to fill the cell
 					label->TextAlign = ContentAlignment::MiddleLeft; // Align the text to the left
 					label->AutoSize = true;
 					// Add label to the table layout
 					tableLayoutPanel2->Controls->Add(label, col, row);
+					i++;
+					if (i == bakeryMaleQueue->Count()) {
+						break;
+					}
 				}
 			}
 			// Add the TableLayoutPanel to the form
@@ -54,26 +64,35 @@ namespace test {
 		void display_FeMalequeue()
 		{
 			// Create a TableLayoutPanel
-			tableLayoutPanel1->ColumnCount = 1;
+			tableLayoutPanel1->ColumnCount = 5;
 			tableLayoutPanel1->RowCount = 1;
 			//tableLayoutPanel1->Dock = DockStyle::Fill; // Dock to fill the form
 
 			// Add some controls to the table layout
 			PriorityQueue<List<int>^>^ bakeryFemaleQueue = DataManager::GetBakeryFemaleQueue();
-
-			for(int row =0 ; row < bakeryFemaleQueue->Count(); row++)
+			int i = 0;
+			int size = bakeryFemaleQueue->Count() / 2;
+			if (bakeryFemaleQueue->Count() % 2 == 1)
+				size++;
+			int maxcol = 5;
+			for(int row =0 ; row < size; row++)
 			{
-
-				for(int col=0; col <1; col++)
+				if (row == size - 1 && bakeryFemaleQueue->Count() % 2 == 1)
+					maxcol = bakeryFemaleQueue->Count() % 2;
+				for(int col=0; col < maxcol && i < bakeryFemaleQueue->Count(); col++)
 				{
 					Label^ label = gcnew Label();
 					// Assuming the first element of cardData is ID, the second is Monthly Bread, and the third is Family Size
-					label->Text = "ID: " + bakeryFemaleQueue->arr[row][0] + "\nNo. of Bread: " + bakeryFemaleQueue->arr[row][1] + "\nAge: " + bakeryFemaleQueue->arr[row][2];
+					label->Text = "ID: " + bakeryFemaleQueue->arr[i][0] + "\nNo. of Bread: " + bakeryFemaleQueue->arr[i][1] + "\nAge: " + bakeryFemaleQueue->arr[i][2];
 					label->Dock = DockStyle::Fill; // Dock labels to fill the cell
-					label->TextAlign = ContentAlignment::MiddleLeft; // Align the text to the left
+					label->TextAlign = ContentAlignment::MiddleLeft; // Align the text to the leftr
 					label->AutoSize = true;
 					// Add label to the table layout
 					tableLayoutPanel1->Controls->Add(label, col, row);
+					i++;
+					if (i == bakeryFemaleQueue->Count()) {
+						break;
+					}
 				}
 			}
 			// Add the TableLayoutPanel to the form
@@ -146,10 +165,10 @@ namespace test {
 			// 
 			this->panel2->BackColor = System::Drawing::Color::Black;
 			this->panel2->ImeMode = System::Windows::Forms::ImeMode::On;
-			this->panel2->Location = System::Drawing::Point(906, 360);
+			this->panel2->Location = System::Drawing::Point(353, 562);
 			this->panel2->Margin = System::Windows::Forms::Padding(4);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(10, 408);
+			this->panel2->Size = System::Drawing::Size(1142, 10);
 			this->panel2->TabIndex = 33;
 			// 
 			// label1
@@ -158,11 +177,11 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(935, 360);
+			this->label1->Location = System::Drawing::Point(348, 576);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(197, 29);
+			this->label1->Size = System::Drawing::Size(150, 29);
 			this->label1->TabIndex = 34;
-			this->label1->Text = L"Male Queue";
+			this->label1->Text = L"Male Queue :";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			this->label1->Click += gcnew System::EventHandler(this, &BakeryQueue::label1_Click);
 			// 
@@ -172,28 +191,36 @@ namespace test {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(702, 360);
+			this->label2->Location = System::Drawing::Point(348, 329);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(197, 29);
 			this->label2->TabIndex = 35;
-			this->label2->Text = L"Female Queue";
+			this->label2->Text = L"Female Queue : ";
 			// 
 			// tableLayoutPanel1
 			// 
 			this->tableLayoutPanel1->AutoSize = true;
 			this->tableLayoutPanel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->tableLayoutPanel1->ColumnCount = 1;
+			this->tableLayoutPanel1->ColumnCount = 5;
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				253)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				248)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				229)));
+			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				204)));
 			this->tableLayoutPanel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->tableLayoutPanel1->Location = System::Drawing::Point(684, 389);
+			this->tableLayoutPanel1->Location = System::Drawing::Point(353, 358);
 			this->tableLayoutPanel1->Margin = System::Windows::Forms::Padding(0);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
 			this->tableLayoutPanel1->RowCount = 1;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle()));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(197, 86);
+			this->tableLayoutPanel1->Size = System::Drawing::Size(1142, 107);
 			this->tableLayoutPanel1->TabIndex = 36;
 			this->tableLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &BakeryQueue::tableLayoutPanel1_Paint);
 			// 
@@ -202,17 +229,25 @@ namespace test {
 			this->tableLayoutPanel2->AutoSize = true;
 			this->tableLayoutPanel2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->tableLayoutPanel2->ColumnCount = 1;
+			this->tableLayoutPanel2->ColumnCount = 5;
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				100)));
+			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				255)));
+			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				253)));
+			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				228)));
+			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
+				202)));
 			this->tableLayoutPanel2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->tableLayoutPanel2->Location = System::Drawing::Point(940, 389);
+			this->tableLayoutPanel2->Location = System::Drawing::Point(353, 605);
 			this->tableLayoutPanel2->Margin = System::Windows::Forms::Padding(0);
 			this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
 			this->tableLayoutPanel2->RowCount = 1;
 			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle()));
-			this->tableLayoutPanel2->Size = System::Drawing::Size(197, 86);
+			this->tableLayoutPanel2->Size = System::Drawing::Size(1142, 117);
 			this->tableLayoutPanel2->TabIndex = 37;
 			this->tableLayoutPanel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &BakeryQueue::tableLayoutPanel2_Paint);
 			// 
@@ -226,7 +261,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button1->Location = System::Drawing::Point(684, 702);
+			this->button1->Location = System::Drawing::Point(1519, 390);
 			this->button1->Margin = System::Windows::Forms::Padding(1);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(197, 55);
@@ -245,7 +280,7 @@ namespace test {
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(214)),
 				static_cast<System::Int32>(static_cast<System::Byte>(159)));
-			this->button2->Location = System::Drawing::Point(940, 702);
+			this->button2->Location = System::Drawing::Point(1519, 639);
 			this->button2->Margin = System::Windows::Forms::Padding(1);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(197, 55);
@@ -331,6 +366,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	try
 	{
 		DataManager::GetBakeryFemaleQueue()->Dequeue();	
+		MessageBox::Show("Bread Delivered Successfully");
 	}
 	catch (Exception^ e)
 	{
@@ -343,6 +379,7 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	try
 	{
 		DataManager::GetBakeryMaleQueue()->Dequeue();
+		MessageBox::Show("Bread Delivered Successfully");
 	}
 	catch (Exception^ e)
 	{

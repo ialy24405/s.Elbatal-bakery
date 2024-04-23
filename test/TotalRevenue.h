@@ -23,8 +23,11 @@ namespace test {
 			//
 			// Set the text.
 			label1->Text += DataManager::getTotalMoney();
+			label1->Text += " L.E.";
 			label4->Text += DataManager::getMoneyNoCard();
+			label4->Text += " L.E.";
 			label3->Text += DataManager::getMoneyCard();
+			label3->Text += " L.E.";
 			label2->Text += DataManager::getTotalBread();
 			label5->Text += DataManager::getBreadNoCard();
 			label6->Text += DataManager::getBreadCard();

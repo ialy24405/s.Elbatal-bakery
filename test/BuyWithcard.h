@@ -400,6 +400,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	try {
 		if (textUsername->Text == "" || textBox1->Text == "" || textBox2->Text == "" || (radioButton1->Checked == false && radioButton2->Checked == false)) {
 			MessageBox::Show("Please fill all the fields", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+
 			return;
 		}
 		else {
@@ -446,6 +447,8 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 							radioButton2->Checked = false;
 							textUsername->Text = "";
 							textBox1->Text = "";
+							textBox2->Text = "";
+							textUsername->Focus();
 						}
 					}
 					else {
@@ -457,6 +460,12 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 	catch (System::FormatException^) {
 		MessageBox::Show("Invalid input. Please enter a number.", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		radioButton1->Checked = false;
+		radioButton2->Checked = false;
+		textUsername->Text = "";
+		textBox1->Text = "";
+		textBox2->Text = "";
+
 	}
 	catch (Exception^ ex) {
 		MessageBox::Show("Not your turn", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);

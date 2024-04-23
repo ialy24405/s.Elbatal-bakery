@@ -1,34 +1,34 @@
-﻿  BuyWithcard.cpp
+﻿  BakeryQueue.cpp
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'BuyWithcard.cpp')
+  (compiling source file 'BakeryQueue.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
   see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'BuyWithcard.cpp')
+  (compiling source file 'BakeryQueue.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
   see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
-  (compiling source file 'BuyWithcard.cpp')
+  (compiling source file 'BakeryQueue.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
   see declaration of 'Queue1<int>'
   
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'BuyWithcard.cpp')
+  (compiling source file 'BakeryQueue.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'BuyWithcard.cpp')
+  (compiling source file 'BakeryQueue.cpp')
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(421,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'BuyWithcard.cpp')
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(371,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'BakeryQueue.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(461,20): warning C4101: 'ex': unreferenced local variable
-  (compiling source file 'BuyWithcard.cpp')
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(384,20): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'BakeryQueue.cpp')
   
   Home.cpp
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
@@ -56,25 +56,25 @@ C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warn
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(421,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(422,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(461,20): warning C4101: 'ex': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(470,20): warning C4101: 'ex': unreferenced local variable
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(356,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(358,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(358,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(360,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(384,20): warning C4101: 'e': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(386,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(335,20): warning C4101: 'e': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(371,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Home.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(347,20): warning C4101: 'e': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(384,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Home.cpp')
   
   Login.cpp
@@ -103,25 +103,25 @@ C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warn
   C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(421,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(422,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(461,20): warning C4101: 'ex': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(470,20): warning C4101: 'ex': unreferenced local variable
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(356,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(358,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(358,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(360,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(384,20): warning C4101: 'e': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(386,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(335,20): warning C4101: 'e': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(371,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(347,20): warning C4101: 'e': unreferenced local variable
+C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(384,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Login.cpp')
   
 C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Login.h(376,23): warning C4101: 'e': unreferenced local variable
