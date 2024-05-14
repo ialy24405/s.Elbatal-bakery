@@ -28,8 +28,14 @@ private:
     static int breadNoCard = 0;
     static float totalMoney = 0;
     static int totalBread = 0;
+	static String^ Adminname;
 public:
-
+    static String^ getAdminName() {
+		return Adminname;
+    }
+    static void setAdminName(String^ name) {
+		Adminname = name;
+    }
     static float getMoneyNoCard() {
         return moneyNoCard;
         }

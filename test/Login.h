@@ -11,6 +11,7 @@ namespace test {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace System::Collections::Generic;
+	using namespace System::Data::SqlClient;
 	/// <summary>
 	/// Summary for Login
 	/// </summary>
@@ -356,34 +357,50 @@ namespace test {
 	}
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 
-	
-
-	for each (Admin ^ it in adminsList)
+	String^ connString = "Data Source=localhost;Initial Catalog=clr1;Integrated Security=True;";
+	SqlConnection sqlConn(connString);
+	sqlConn.Open();
+	String^ query = "SELECT * FROM Admin WHERE name = @name AND Pass = @pass;";
+	SqlCommand command(query, % sqlConn);
+	command.Parameters->AddWithValue("@name", textUsername->Text);
+	command.Parameters->AddWithValue("@pass", textPassword->Text);
+	SqlDataReader^ reader = command.ExecuteReader();
+	if (reader->Read())
 	{
-		if (String::Equals(textUsername->Text, it->getUserName()) && String::Equals(textPassword->Text, it->getPassword()))
-		{
-			MessageBox::Show("Login Successfully", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
-			// homePage();
-			textUsername->Clear();
-			textPassword->Clear();
-			Home home;
-			this->Hide();
-			home.ShowDialog();
-			try {
-			this->Show(); 
+		MessageBox::Show("Login Successfully", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		DataManager::setAdminName(textUsername->Text);
+		// homePage();
+		textUsername->Clear();
+		textPassword->Clear();
+		Home home;
+		this->Hide();
+		home.ShowDialog();
+		try {
+			this->Show();
 			return;
 
-			}catch (Exception^ e) {
-				
-			}
+		}
+		catch (Exception^ e) {
+
 		}
 	}
+	else {
+
+		MessageBox::Show("Invalid Username or Password", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		textUsername->Clear();
+		textPassword->Clear();
+		textUsername->Focus();
+	}
+
+	//for each (Admin ^ it in adminsList)
+	//{
+		//if (String::Equals(textUsername->Text, it->getUserName()) && String::Equals(textPassword->Text, it->getPassword()))
+		//{
+
+		//}
+	//}
 	// Show a message box indicating invalid credentials
 
-	MessageBox::Show("Invalid Username or Password", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-	textUsername->Clear();
-	textPassword->Clear();
-	textUsername->Focus();
 
 }
 private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {

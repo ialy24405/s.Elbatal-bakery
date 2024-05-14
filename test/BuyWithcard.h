@@ -8,6 +8,7 @@ namespace test {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Data::SqlClient;
 
 	/// <summary>
 	/// Summary for BuyWithcard
@@ -425,10 +426,64 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 						if (DialogResult == System::Windows::Forms::DialogResult::OK)
 						{
 							DataManager::setBreadCard(bread);
+							String^ Adminname = DataManager::getAdminName();
+							String^ connString = "Data Source=localhost;Initial Catalog=clr1;Integrated Security=True;";
+							SqlConnection^ sqlConn = gcnew SqlConnection(connString);
+							sqlConn->Open();
+							String^ query = "SELECT money1 FROM Admin WHERE name = '" + Adminname + "';";
+							SqlCommand^ sqlCmd = gcnew SqlCommand(query, sqlConn);
+							double money1;
+							Object^ result = sqlCmd->ExecuteScalar();
+							if (result != nullptr)
+							{
+								money1 = Convert::ToDouble(result);
+								money1 += price; 
+							}
+							else
+							{
+								MessageBox::Show("No value returned for money1", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+							}	
+							money1 += price;
+							String^ query1 = "UPDATE Admin SET money1 = "+ money1 +" WHERE name = @adminName; ";
+							SqlCommand^ command1 = gcnew SqlCommand(query1, sqlConn);
+
+							// Add parameters for the price and adminName
+							command1->Parameters->AddWithValue("@adminName", Adminname);
+
+							// Execute the query
+							int rowsAffected = command1->ExecuteNonQuery();
+
+							if (rowsAffected > 0) {
+								MessageBox::Show("money1 updated successfully ", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+							}
+							else {
+								MessageBox::Show("No admin found with the specified name", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+							}
+							//query = "update Cards set Money = Money + " + price + " where CardID = " + cardid;	
+							//sqlCmd = gcnew SqlCommand(query, sqlConn);
+							//sqlCmd->ExecuteNonQuery();
 							DataManager::setMoneyCard(price);
-							DataManager::setTotalBread(bread);
-							DataManager::setTotalMoney(price);
+							//DataManager::setTotalBread(bread);
+							//DataManager::setTotalMoney(price);
 							DataManager::SetRemainBread(cardid, bread);
+							String^ query2 = "SELECT b1 FROM Admin WHERE name = '" + Adminname + "';";
+							SqlCommand^ sqlCmd2 = gcnew SqlCommand(query2, sqlConn);
+							double b1 = 0.0; // Initialize b2 to zero
+							Object^ result2 = sqlCmd2->ExecuteScalar();
+							if (result2 != nullptr)
+							{
+								b1 = Convert::ToDouble(result2);
+								b1 += bread; // Add the price to b2
+							}
+
+							String^ query3 = "UPDATE Admin SET b1 = @b1 WHERE name = @adminName; ";
+							SqlCommand^ command2 = gcnew SqlCommand(query3, sqlConn);
+
+							// Add parameters for the b2 and adminName
+							command2->Parameters->AddWithValue("@b1", b1);
+							command2->Parameters->AddWithValue("@adminName", Adminname);
+							// Execute the query
+							int rowsAffected2 = command2->ExecuteNonQuery();
 							List<int>^ information = gcnew List<int>();
 							information->Add(id);
 							information->Add(bread);
@@ -467,9 +522,9 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		textBox2->Text = "";
 
 	}
-	catch (Exception^ ex) {
-		MessageBox::Show("Not your turn", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
-	}
+	//catch (Exception^ ex) {
+		//MessageBox::Show("Not your turn", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	//}
 
 }
 

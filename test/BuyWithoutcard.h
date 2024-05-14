@@ -8,6 +8,7 @@ namespace test {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Data::SqlClient;
 
 	/// <summary>
 	/// Summary for BuyWithoutcard
@@ -353,11 +354,54 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 					int age = DataManager::getCustomerAge(id);
 					DialogResult = MessageBox::Show("You should Pay: " + price + "\nAre you sure you want to buy ?", "Success", MessageBoxButtons::OKCancel);
 					if (DialogResult == System::Windows::Forms::DialogResult::OK)
-					{
+					{	
+						String^ Adminname = DataManager::getAdminName();
+						String^ connString = "Data Source=localhost;Initial Catalog=clr1;Integrated Security=True;";
+						SqlConnection^ sqlConn = gcnew SqlConnection(connString);
+						sqlConn->Open();
+						String^ query = "SELECT money2 FROM Admin WHERE name = '" + Adminname + "';";
+						SqlCommand^ sqlCmd = gcnew SqlCommand(query, sqlConn);
+						double money2 = 0.0; // Initialize money2 to zero
+						Object^ result = sqlCmd->ExecuteScalar();
+						if (result != nullptr)
+						{
+							money2 = Convert::ToDouble(result);
+							money2 += price; // Add the price to money2
+						}
+
+						String^ query1 = "UPDATE Admin SET money2 = @money2 WHERE name = @adminName; ";
+						SqlCommand^ command1 = gcnew SqlCommand(query1, sqlConn);
+
+						// Add parameters for the money2 and adminName
+						command1->Parameters->AddWithValue("@money2", money2);
+						command1->Parameters->AddWithValue("@adminName", Adminname);
+
+						// Execute the query
+						int rowsAffected = command1->ExecuteNonQuery();
+
 						DataManager::setBreadNoCard(bread);
 						DataManager::setMoneyNoCard(price);
 						DataManager::setTotalBread(bread);
 						DataManager::setTotalMoney(price);
+						String^ query2 = "SELECT b2 FROM Admin WHERE name = '" + Adminname + "';";
+						SqlCommand^ sqlCmd2 = gcnew SqlCommand(query2, sqlConn);
+						double b2 = 0.0; // Initialize b2 to zero
+						Object^ result2 = sqlCmd2->ExecuteScalar();
+						if (result2 != nullptr)
+						{
+							b2 = Convert::ToDouble(result2);
+							b2 += bread; // Add the price to b2
+						}
+
+						String^ query3 = "UPDATE Admin SET b2 = @b2 WHERE name = @adminName; ";
+						SqlCommand^ command2 = gcnew SqlCommand(query3, sqlConn);
+
+						// Add parameters for the b2 and adminName
+						command2->Parameters->AddWithValue("@b2", b2);
+						command2->Parameters->AddWithValue("@adminName", Adminname);
+						// Execute the query
+						int rowsAffected2 = command2->ExecuteNonQuery();
+
 						DataManager::SetCustomerBread(id, bread);
 						List<int>^ information = gcnew List<int>();
 						information->Add(id);
