@@ -2,7 +2,7 @@
 using namespace System;
 using namespace System::Windows::Forms;
 using namespace test;
-[STAThread]
+[STAThreadAttribute]
 void main2(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);

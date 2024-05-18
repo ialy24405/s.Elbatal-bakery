@@ -1,136 +1,81 @@
-﻿  BakeryQueue.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'BakeryQueue.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+﻿  Login.cpp
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\DataControler.h(80,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'Login.cpp')
+  F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
   see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'BakeryQueue.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\DataControler.h(92,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
+  (compiling source file 'Login.cpp')
+  F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
   see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
-  (compiling source file 'BakeryQueue.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\DataControler.h(105,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
+  (compiling source file 'Login.cpp')
+  F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Queue.h(5,11):
   see declaration of 'Queue1<int>'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'BakeryQueue.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\DataControler.h(213,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'Login.cpp')
+  F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'BakeryQueue.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\DataControler.h(236,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
+  (compiling source file 'Login.cpp')
+  F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\CardsInformation.h(2,11):
   see declaration of 'CardsInformation'
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(371,20): warning C4101: 'e': unreferenced local variable
-  (compiling source file 'BakeryQueue.cpp')
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(384,20): warning C4101: 'e': unreferenced local variable
-  (compiling source file 'BakeryQueue.cpp')
-  
-  Home.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'Home.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
-  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'Home.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
-  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
-  (compiling source file 'Home.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
-  see declaration of 'Queue1<int>'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'Home.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
-  see declaration of 'CardsInformation'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'Home.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
-  see declaration of 'CardsInformation'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(422,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  (compiling source file 'Home.cpp')
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(470,20): warning C4101: 'ex': unreferenced local variable
-  (compiling source file 'Home.cpp')
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(358,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Home.cpp')
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(360,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Home.cpp')
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(386,20): warning C4101: 'e': unreferenced local variable
-  (compiling source file 'Home.cpp')
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(371,20): warning C4101: 'e': unreferenced local variable
-  (compiling source file 'Home.cpp')
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(384,20): warning C4101: 'e': unreferenced local variable
-  (compiling source file 'Home.cpp')
-  
-  Login.cpp
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(74,62): warning C4677: 'GetBakeryFemaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'Login.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
-  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(86,60): warning C4677: 'GetBakeryMaleQueue': signature of non-private member contains assembly private type 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  (compiling source file 'Login.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\PriorityQueue.h(4,11):
-  see declaration of 'PriorityQueue<System::Collections::Generic::List<int> ^>'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(99,41): warning C4677: 'GetPayingQueue': signature of non-private member contains assembly private type 'Queue1<int>'
-  (compiling source file 'Login.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Queue.h(5,11):
-  see declaration of 'Queue1<int>'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(207,5): warning C4677: 'GetCardsVector': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'Login.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
-  see declaration of 'CardsInformation'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\DataControler.h(230,2): warning C4677: 'AddCard': signature of non-private member contains assembly private type 'CardsInformation'
-  (compiling source file 'Login.cpp')
-  C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\CardsInformation.h(2,11):
-  see declaration of 'CardsInformation'
-  
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(422,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,29): warning C4244: 'argument': conversion from '_Ty1' to 'int', possible loss of data
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,29): warning C4244:         with
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,29): warning C4244:         [
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,29): warning C4244:             _Ty1=test::ll
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,29): warning C4244:         ]
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithcard.h(470,20): warning C4101: 'ex': unreferenced local variable
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,69): warning C4244: 'argument': conversion from '_Ty2' to 'int', possible loss of data
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,69): warning C4244:         with
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,69): warning C4244:         [
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,69): warning C4244:             _Ty2=test::ll
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Register.h(39,69): warning C4244:         ]
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(358,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\BuyWithcard.h(423,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(360,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\BuyWithoutcard.h(383,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BuyWithoutcard.h(386,20): warning C4101: 'e': unreferenced local variable
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\BuyWithoutcard.h(385,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(371,20): warning C4101: 'e': unreferenced local variable
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\BuyWithoutcard.h(430,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\BakeryQueue.h(384,20): warning C4101: 'e': unreferenced local variable
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\BakeryQueue.h(371,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Login.h(376,23): warning C4101: 'e': unreferenced local variable
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\BakeryQueue.h(384,20): warning C4101: 'e': unreferenced local variable
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Login.h(442,21): warning C4101: 'e': unreferenced local variable
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,29): warning C4244: 'argument': conversion from '_Ty1' to 'int', possible loss of data
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,29): warning C4244:         with
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,29): warning C4244:         [
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,29): warning C4244:             _Ty1=test::ll
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,29): warning C4244:         ]
   (compiling source file 'Login.cpp')
   
-C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\Login.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
-  Generating Code...
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,69): warning C4244: 'argument': conversion from '_Ty2' to 'int', possible loss of data
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,69): warning C4244:         with
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,69): warning C4244:         [
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,69): warning C4244:             _Ty2=test::ll
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(35,69): warning C4244:         ]
+  (compiling source file 'Login.cpp')
+  
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(405,21): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'Login.cpp')
+  
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.h(481,21): warning C4101: 'e': unreferenced local variable
+  (compiling source file 'Login.cpp')
+  
+F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\Login.cpp(6,33): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
   AddCard.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  test.vcxproj -> C:\Users\Aly\Documents\GitHub\s.Elbatal-bakery\test\x64\Debug\test.exe
+  test.vcxproj -> F:\Fourth Term\Data structure\Project\s.Elbatal-bakery\test\x64\Debug\test.exe

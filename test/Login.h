@@ -30,6 +30,27 @@ namespace test {
 			adminsList = DataManager::GetAdminsList();
 			//DataManager::AddAdmin("a", "a");
 		}
+		String^ encrypt(int i, std::vector<std::pair<ll, ll>> Enctree, String^ s) {
+			if (i > s->Length) return "";
+			return encrypt(Enctree[i].first, Enctree, s) + encrypt(Enctree[i].second, Enctree, s) + s[i - 1];
+		}
+
+		// Function to perform encryption
+		String^ funcEncrypt(String^ s) {
+			// Convert System::String to std::string
+			String^ str = s;
+
+			// Create Enctree vector
+			std::vector<std::pair<ll, ll>> Enctree;
+			Enctree.resize(1 << 19);
+			for (int i = 1; i <= str->Length; i++) {
+				Enctree[i].first = i * 2;
+				Enctree[i].second = i * 2 + 1;
+			}
+
+			// Call encrypt function and return the result
+			return encrypt(1, Enctree, str);
+		}
 
 	protected:
 		/// <summary>
@@ -362,8 +383,9 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	sqlConn.Open();
 	String^ query = "SELECT * FROM Admin WHERE name = @name AND Pass = @pass;";
 	SqlCommand command(query, % sqlConn);
+	String^ pass = funcEncrypt(textPassword->Text);
 	command.Parameters->AddWithValue("@name", textUsername->Text);
-	command.Parameters->AddWithValue("@pass", textPassword->Text);
+	command.Parameters->AddWithValue("@pass", pass);
 	SqlDataReader^ reader = command.ExecuteReader();
 	if (reader->Read())
 	{

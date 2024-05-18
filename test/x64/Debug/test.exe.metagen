@@ -51,6 +51,8 @@ Class CustomerInformation: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class DataManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
+    getAdminName(): PrivateScope, Public, Static, HideBySig
+    setAdminName(String): PrivateScope, Public, Static, HideBySig
     getMoneyNoCard(): PrivateScope, Public, Static, HideBySig
     setMoneyNoCard(Single): PrivateScope, Public, Static, HideBySig
     getMoneyCard(): PrivateScope, Public, Static, HideBySig
@@ -131,8 +133,14 @@ Class test.Register: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    encrypt(Int32, vector<std::pair<__int64\,__int64>\,std::allocator<std::pair<__int64\,__int64> > >*, String): PrivateScope, Public, HideBySig
+    funcEncrypt(String): PrivateScope, Public, HideBySig
 Class test.Login: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     System.Collections.Generic.List`1[Admin] adminsList : Public
+  Methods:
+    encrypt(Int32, vector<std::pair<__int64\,__int64>\,std::allocator<std::pair<__int64\,__int64> > >*, String): PrivateScope, Public, HideBySig
+    funcEncrypt(String): PrivateScope, Public, HideBySig

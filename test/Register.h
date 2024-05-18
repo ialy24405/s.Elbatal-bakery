@@ -2,6 +2,7 @@
 //#include"Admin.h"
 //#include"Login.h"
 #include "DataControler.h"
+
 namespace test {
 
 	using namespace System;
@@ -10,7 +11,10 @@ namespace test {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Data::SqlClient;
 
+	// Assuming ll is defined as a typedef or using statement
+	typedef long long ll;
 	/// <summary>
 	/// Summary for Register
 	/// </summary>
@@ -29,6 +33,27 @@ namespace test {
 			InitializeComponent();
 			textUsername->Text = username;
 			textPassword->Text = password;
+		}
+		String^ encrypt(int i, std::vector<std::pair<ll, ll>> Enctree, String^ s) {
+			if (i > s->Length) return "";
+			return encrypt(Enctree[i].first, Enctree, s) + encrypt(Enctree[i].second, Enctree, s) + s[i - 1];
+		}
+
+		// Function to perform encryption
+		String^ funcEncrypt(String^ s) {
+			// Convert System::String to std::string
+			String^ str = s;
+
+			// Create Enctree vector
+			std::vector<std::pair<ll, ll>> Enctree;
+			Enctree.resize(1 << 19);
+			for (int i = 1; i <= str->Length; i++) {
+				Enctree[i].first = i * 2;
+				Enctree[i].second = i * 2 + 1;
+			}
+
+			// Call encrypt function and return the result
+			return encrypt(1, Enctree, str);
 		}
 
 	protected:
@@ -362,6 +387,9 @@ namespace test {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		String^ username = textUsername->Text;
 		String^ password = textPassword->Text;
+		//Encryptors^ encryptor = gcnew Encryptors();
+
+		// Encrypt the password
 
 		if (username == "" || password == "") {
 			MessageBox::Show("Please fill in all fields", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
@@ -369,20 +397,75 @@ namespace test {
 		}
 
 		// Check if username contains a number or non-alphabetic symbol (excluding spaces)
-		for each (char c in username)
-		{
+		for each (char c in username) {
 			if (!System::Char::IsLetter(c) && c != ' ') {
-				MessageBox::Show("A username should not contain numbers or symbols");
+				MessageBox::Show("A username should not contain numbers or symbols", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 				return;
+			}
+
+		}
+		//encryptor->SetPassword(password);
+		//encryptor->Encrypt(1);
+		password = funcEncrypt(password);
+
+		// Password complexity requirements
+		bool hasUpperCase = false;
+		bool hasLowerCase = false;
+		bool hasDigit = false;
+		bool hasSymbol = false;
+		for each (char c in password) {
+			if (System::Char::IsUpper(c))
+				hasUpperCase = true;
+			else if (System::Char::IsLower(c))
+				hasLowerCase = true;
+			else if (System::Char::IsDigit(c))
+				hasDigit = true;
+			else {
+				switch (c) {
+				case '!': case '@': case '#': case '$': case '%':
+				case '^': case '&': case '*': case '(': case ')':
+				case '-': case '_': case '=': case '+':
+					hasSymbol = true;
+					break;
+				}
 			}
 		}
 
+		if (password->Length < 8 || !hasUpperCase || !hasLowerCase || !hasDigit || !hasSymbol) {
+			MessageBox::Show("Password must be at least 8 characters"+password->Length+" long and contain at least one uppercase letter"+hasUpperCase+", one lowercase letter"+hasLowerCase+", one digit"+hasDigit+", and one special character "+hasSymbol+"(!@#$ % ^&*() - _ = +)", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			return;
+		}
+
+
+
+
+		double defaultMoney = 0.0; // Default value for money1, money2, b1, and b2
+
 		if (!DataManager::CheckAdmin(username, password)) {
-			DataManager::AddAdmin(username, password);
-			MessageBox::Show("Account created successfully", "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
-			textUsername->Clear();
-			textPassword->Clear();
-			textUsername->Focus();
+			try {
+				String^ connString = "Data Source=localhost;Initial Catalog=clr1;Integrated Security=True;";
+				SqlConnection^ sqlConn = gcnew SqlConnection(connString);
+				sqlConn->Open();
+				String^ query = "INSERT INTO Admin (Pass, name, money1, money2, b1, b2) VALUES (@pass, @name, @money1, @money2, @b1, @b2); SELECT SCOPE_IDENTITY();";
+				SqlCommand^ command = gcnew SqlCommand(query, sqlConn);
+				command->Parameters->AddWithValue("@pass", password);
+				command->Parameters->AddWithValue("@name", username);
+				command->Parameters->AddWithValue("@money1", defaultMoney);
+				command->Parameters->AddWithValue("@money2", defaultMoney);
+				command->Parameters->AddWithValue("@b1", defaultMoney);
+				command->Parameters->AddWithValue("@b2", defaultMoney);
+
+				// Execute the query and get the ID of the inserted admin
+				int adminId = Convert::ToInt32(command->ExecuteScalar());
+
+				MessageBox::Show("Admin added successfully with ID: " + adminId, "Success", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				textUsername->Clear();
+				textPassword->Clear();
+				textUsername->Focus();
+			}
+			catch (Exception^ ex) {
+				MessageBox::Show(ex->Message, "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			}
 		}
 		else {
 			MessageBox::Show("Username already exists", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
